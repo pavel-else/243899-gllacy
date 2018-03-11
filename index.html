@@ -186,5 +186,19 @@
 				Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss"></a>HTML Academy © 2017
 			</p>
 		</footer>
+
+		<section class="feedback">
+			<h2 class="visually-hidden">Форма обратной связи</h2>
+			<p>Мы обязательно вам ответим</p>
+			<form class="feedback__form" action="#">
+				<label for="feedback__label--name" class="visually-hidden">Как вас зовут?</label>
+				<input type="text" name="feedback__label--name" id="feedback__label--name"placeholder="Как вас зовут?">
+				<label for="feedback__label--email">Ваша почта для ответа?</label>
+				<input type="text" name="feedback__label--email" id="feedback__label--email" placeholder="Ваша почта для ответа?">
+				<label for="feedback__label--text" class="visually-hidden">Напишите что-нибудь...</label>
+				<textarea name="feedback__label--text" id="feedback__label--text" cols="30" rows="10">Напишите что-нибудь...</textarea>
+				<input type="submit" class="button" value="Отправить">
+			</form>
+		</section>
 	</body>
 </html>
