@@ -58,10 +58,56 @@
 				<li><a href="#">Сливочное</a></li>
 			</ul>
 
-			<section class="filter-product">
+			<section class="filter">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form action="#">
-					<!--Инпуты-->
+					<legend>Сортировка:</legend>
+					<select name="sort" id="filter__sort">
+						<option value="popular">По популярности</option>
+						<option value="inexpensive">Сначала недорогие</option>
+						<option value="expensive">Сначала дорогие</option>
+						<option value="fat">По жирности</option>
+					</select>
+
+					<!--range-toggle 
+						<legend>Цена: 100 руб. – 500 руб.</legend>
+					-->
+
+					<fieldset class="filter__fat">
+						<legend>Жирность</legend>
+						<input id="fat-0" class="filter__radio" type="radio" name="fat" value="0">
+						<label for="fat-0" class="filter__label">0%</label>
+
+						<input id="fat-10" class="filter__radio" type="radio" name="fat" value="<10" checked>
+						<label for="fat-<10" class="filter__label">до 10%</label>
+
+						<input id="fat-<30" class="filter__radio" type="radio" name="fat" value="<30">
+						<label for="fat-<30" class="filter__label">до 30%</label>
+
+						<input id="fat->30" class="filter__radio" type="radio" name="fat" value=">30">
+						<label for="fat->30" class="filter__label">выше 30%</label>
+					</fieldset>
+
+					<fieldset class="filter__filler">
+						<legend>Наполнители:</legend>
+						
+						<label for="filter__chocolate" class="filter__label">шоколадные</label>
+						<input id="filter__chocolate" class="filter__checkbox" name="filter__chocolate" type="checkbox" checked>
+
+						<label for="filter__sugar" class="filter__label">сахарные присыпки</label>
+						<input id="filter__sugar" class="filter__checkbox" name="filter__sugar" type="checkbox" checked>
+
+						<label for="filter__fruit" class="filter__label">фрукты</label>
+						<input id="filter__fruit" class="filter__checkbox" name="filter__fruit" type="checkbox">
+
+						<label for="filter__syrup" class="filter__label">сиропы</label>
+						<input id="filter__syrup" class="filter__checkbox" name="filter__syrup" type="checkbox">
+
+						<label for="filter__jam" class="filter__label">джемы</label>
+						<input id="filter__jam" class="filter__checkbox" name="filter__jam" type="checkbox">
+					</fieldset>
+
+					<input type="submit" class="button filter__submit" value="Применить">
 				</form>
 			</section>
 
