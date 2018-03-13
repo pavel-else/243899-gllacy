@@ -18,7 +18,7 @@
 						<form class="user-navigation__form--search" action="#" method="post">
 							<button class="button user-navigation__button"></button>
 							<label for="user-navigation__search" class="visually-hidden">Поиск по сайту</label>
-							<input id="user-navigation__search" type="text" placeholder="Что ищем?">
+							<input id="user-navigation__search" type="search" placeholder="Что ищем?">
 						</form>
 					</li>
 					<li>
@@ -54,7 +54,7 @@
 
 			<section class="slider">
 				<h2 class="visually-hidden">Слайдер</h2>
-				<ul class="sider-images">
+				<ul class="sider__images">
 					<li class="active">
 						<img src="img/doube-ice-1.png" width="647" height="584" alt="Два рожка с мороженным">
 						<p>Крем-брюле и пломбир с малиновым джемом</p>
@@ -92,23 +92,23 @@
 				<ul class="product__items">
 					<li class="product__item">
 						<img src="img/ice-1.jpg" width="267" height="267" alt="Сливочное мороженное">
-						<p class="product-price">310 р <span class="product__kg">кг</span></p>
-						<p class="product-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+						<p class="product__price">310 р <span class="product__weight">кг</span></p>
+						<p class="product__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
 					</li>
 					<li class="product__item">
 						<img src="img/ice-2.jpg" width="267" height="267" alt="Сливочное-кофейное мороженное">
-						<p class="product-price">380 р <span class="product__kg">кг</span></p>
-						<p class="product-description">Сливочно-кофейное с кусочками шоколада</p>
+						<p class="product__price">380 р <span class="product__weight">кг</span></p>
+						<p class="product__description">Сливочно-кофейное с кусочками шоколада</p>
 					</li>
 					<li class="product__item">
 						<img src="img/ice-3.jpg" width="267" height="267" alt="Сливочно-клубничное">
-						<p class="product-price">355 р <span class="product__kg">кг</span></p>
-						<p class="product-description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+						<p class="product__price">355 р <span class="product__weight">кг</span></p>
+						<p class="product__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
 					</li>
 					<li class="product__item">
 						<img src="img/ice-4.jpg" width="267" height="267" alt="Крем-брюле">
-						<p class="product-price">415 р <span class="product__kg">кг</span></p>
-						<p class="product-description">Сливочное крем-брюле с карамельной подливкой</p>
+						<p class="product__price">415 р <span class="product__weight">кг</span></p>
+						<p class="product__description">Сливочное крем-брюле с карамельной подливкой</p>
 					</li>
 				</ul>
 			</section>
@@ -149,8 +149,8 @@
 			</section>
 
 			<section class="map">
-				<h2 class="visually-hidden">Карта</h2>
-				<img src="img/map.jpg" width="1200" height="430" alt="Карта">
+				<h2 class="visually-hidden">Как до нас добраьтся</h2>
+				<img src="img/map.jpg" width="1200" height="430" alt="Главный офис расположен по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 				<p class="map-info">
 					Адрес главного офиса и офлайн-магазина: <br>
 					<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span><br>
@@ -191,10 +191,10 @@
 			<h2 class="visually-hidden">Форма обратной связи</h2>
 			<p>Мы обязательно вам ответим</p>
 			<form class="feedback__form" action="#">
-				<label for="feedback__input--name" class="feedback__label feedback__label--name visually-hidden">Как вас зовут?</label>
+				<label for="feedback__name" class="feedback__label feedback__label--name visually-hidden">Как вас зовут?</label>
 				<input type="text" name="feedback__name" id="feedback__name" placeholder="Как вас зовут?">
 
-				<label for="feedback__input--email" class="feedback__label feedback__label--email visually-hidden">Ваша почта для ответа?</label>
+				<label for="feedback__email" class="feedback__label feedback__label--email visually-hidden">Ваша почта для ответа?</label>
 				<input type="text" name="feedback__email" id="feedback__email" placeholder="Ваша почта для ответа?">
 
 				<label for="feedback__text" class="feedback__label feedback__label--text visually-hidden">Напишите что-нибудь...</label>
@@ -202,7 +202,7 @@
 
 				<input type="submit" class="button feedback__submit" value="Отправить">
 			</form>
-			<button class="feedback__close" area="Закрыть форму"></button>
+			<button class="feedback__close">Закрыть форму</button>
 		</section>
 	</body>
 </html>
