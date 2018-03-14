@@ -7,5 +7,243 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
+
+  background-color: #849d8f;
 }
 
+a {
+  color: #ffffff ;
+}
+
+a:hover {
+  color: #ffbc9e;
+}
+
+.button {
+  font: inherit;
+  padding: 14px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #e9563a;
+  border: 0;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.navigation__items {
+  list-style: none;
+  font-weight: bold;
+}
+
+.user-navigation {
+  list-style: none;
+  font-weight: bold;
+}
+
+.contact-info {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.contact-info__tel {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.contact-info__tel,
+.contact-info__tel:hover {
+  text-decoration: none;
+  cursor: default;
+  color: #ffffff;
+}
+
+.slider__images {
+  list-style: none;
+}
+
+.slider__description {
+  font-size: 60px;
+  line-height: 60.35px;
+  text-align: center;
+}
+
+.discount__caption {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.discount__description {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.discount--raspberries {
+  background-color: #a82c3e;
+}
+
+.discount--chocolate {
+  background-color: #5a3a30;
+}
+
+.product__items {
+  list-style: none;
+}
+
+.product__price {
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.product__weight {
+  font-size: 30px;
+}
+
+.features {
+  background-color: #ebd9b8;
+  background-image: url("../img/wafer-pattern.jpg");
+}
+
+.feature__caption {
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.feature__items {
+  list-style: none;
+}
+
+.feature__item {
+  color: #323232;
+}
+
+
+.new-in-blog {
+  background-color: #ffffff;
+}
+
+.new-in-blog__caption {
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+
+.new-in-blog__link {
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+}
+
+.subscription {
+  background-color: #f8f7f4;
+}
+
+.subscription__description {
+  color: #323232;
+}
+
+
+.map {
+  position: relative;
+  background-color: #f7f1d9;
+}
+
+.map__pin {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+}
+
+.map__info {
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #fefefe;
+  color: #323232;
+}
+
+.map__info span {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.map__tel {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #323232;
+  text-decoration: none;
+}
+
+.map__tel:hover {
+  color: #323232;
+  cursor: default;
+}
+
+
+.social__items {
+  list-style: none;
+}
+
+.social__item {
+  width: 32px;
+  height: 32px;
+}
+
+.social__item--tw {
+  background-image: url("../img/svg/twitter.svg");
+}
+.social__item--inst {
+  background-image: url("../img/svg/instagram.svg");
+}
+.social__item--fb {
+  background-image: url("../img/svg/fb.svg");
+}
+.social__item--vk {
+  background-image: url("../img/svg/vk.svg");
+}
+
+.social__item a {
+  font-size: 0;
+}
+
+
+.sitelinks__items {
+  list-style: none;
+}
+
+.sitelink__link {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sitelink__link--attention {
+  font-weight: bold;
+}
+
+.footer-logo {
+  display: block;
+  height: 39px;
+  width: 108px;
+  background-image: url("../img/svg/logo-htmlacademy.svg");
+}
+
+.footer-copyright {
+  font-size: 13px;
+  line-height: 18px;
+}
