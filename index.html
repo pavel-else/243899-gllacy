@@ -8,75 +8,82 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <nav class="navigation">
-        <img class="main-header-logo" src="img/svg/logo.svg" width="154" height="64" alt="Gllacy Shop - логотип онлайн-магазина мороженного">
-        <ul class="navigation__items">
-          <li class="navigation__item"><a href="catalog.html">Каталог</a></li>
-          <li class="navigation__item"><a href="delivery.html">Доставка и оплата</a></li>
-          <li class="navigation__item"><a href="about.html">О компании</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li>
-            <form class="user-navigation__form--search" action="#" method="post">
-              <button class="button user-navigation__button">Поиск</button>
-              <label for="user-navigation__search" class="visually-hidden">Поиск по сайту</label>
-              <input id="user-navigation__search" type="search" placeholder="Что ищем?">
-            </form>
-          </li>
-          <li>
-            <!--
-              Необходимо перехватить переход по ссылке и вывести форму ввода логина.
-              Ссылка на страницу нужна на случай, если JS отработал не корректно
-            -->
-            <a class="user-navigation__login" href="login.html">Вход</a>
-            <form class="user-navigation__form--login" action="#" method="post">
-              <label for="user-navigation__login--email" class="visually-hidden">Электронная почта</label>
-              <input id="user-navigation__login--email" type="email" placeholder="Электронная почта">
+    <header class="main-header container tmp">
+      <nav class="navigation tmp">
+        <div class="navigation__wrapper--left tmp">
+          <img class="main-header-logo" src="img/svg/logo.svg" width="154" height="64" alt="Gllacy Shop - логотип онлайн-магазина мороженного">
+          <ul class="navigation__items">
+            <li class="navigation__item"><a href="catalog.html">Каталог</a></li>
+            <li class="navigation__item"><a href="delivery.html">Доставка и оплата</a></li>
+            <li class="navigation__item"><a href="about.html">О компании</a></li>
+          </ul>
+        </div>
 
-              <label for="user-navigation__login--pass" class="visually-hidden">Пароль</label>
-              <input id="user-navigation__login--pass" type="password" placeholder="Пароль">
-              <button type="submit" class="button">Войти</button>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-            </form>
-          </li>
-          <li>
-            <button class="button">Корзина</button>
-          </li>
-        </ul>
+        <div class="navigation__wrapper--right tmp">
+          <ul class="user-navigation tmp">
+            <li>
+              <form class="user-navigation__form--search tmp" action="#" method="post">
+                <label for="user-navigation__search" class="visually-hidden">Поиск по сайту</label>
+                <input id="user-navigation__search" class="user-navigation__search" type="search" placeholder="Что ищем?">
+              </form>
+              <!-- ЗАТЫК -->
+              <button src="img/svg/loupe.svg" class="user-navigation__button"><img src="img/svg/loupe.svg" alt="">Поиск</button>
+            </li>
+            <li>
+              <!--
+                Необходимо перехватить переход по ссылке и вывести форму ввода логина.
+                Ссылка на страницу нужна на случай, если JS отработал не корректно
+              -->
+              <a class="user-navigation__login" href="login.html">Вход</a>
+              <form class="user-navigation__form--login" action="#" method="post">
+                <label for="user-navigation__login--email" class="visually-hidden">Электронная почта</label>
+                <input id="user-navigation__login--email" type="email" placeholder="Электронная почта">
+
+                <label for="user-navigation__login--pass" class="visually-hidden">Пароль</label>
+                <input id="user-navigation__login--pass" type="password" placeholder="Пароль">
+                <button type="submit" class="button">Войти</button>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </form>
+            </li>
+            <li>
+              <button class="button">Корзина</button>
+            </li>
+          </ul>
+
+          <p class="contact-info">
+            С 10 до 20, ежедневно<br>
+            <a class="contact-info__tel" href="tel:88124502525">8 812 450-25-25</a>
+          </p>
+        </div>
       </nav>
-      <p class="contact-info">
-        С 10 до 20, ежедневно<br>
-        <a class="contact-info__tel" href="tel:88124502525">8 812 450-25-25</a>
-      </p>
     </header>
 
     <main>
       <h1 class="visually-hidden">Глэйси — онлайн-магазин по продаже мороженного</h1>
 
-      <section class="slider">
+      <section class="slider container tmp">
         <h2 class="visually-hidden">Слайдер</h2>
-        <ul class="slider__images">
-          <li class="active">
-            <img src="img/doube-ice-1.png" width="647" height="584" alt="Два рожка с мороженным">
+        <ul class="slider__pages">
+          <li class="slider__page active">
+            <img class="slider__image" src="img/doube-ice-1.png" width="647" height="584" alt="Два рожка с мороженным">
             <p class="slider__description">Крем-брюле и пломбир с малиновым джемом</p>
             <a href="#" class="button slider__button">Давайте оба</a>
           </li>
-          <li>
-            <img src="img/doube-ice-2.png" width="647" height="584" alt="Изображение второго слайда">
+          <li class="slider__page">
+            <img class="slider__image" src="img/doube-ice-2.png" width="647" height="584" alt="Изображение второго слайда">
             <p class="slider__description">Крем-брюле и пломбир без малинового джема</p>
             <a href="#" class="button slider__button">Давайте оба</a>
           </li>
-          <li>
-            <img src="img/doube-ice-3.png" width="647" height="584" alt="Изображение третьего слайда">
+          <li class="slider__page">
+            <img class="slider__image" src="img/doube-ice-3.png" width="647" height="584" alt="Изображение третьего слайда">
             <p class="slider__description">Крем-брюле и пломбир с не малиновым джемом</p>
             <a href="#" class="button slider__button">Давайте оба</a>
           </li>
         </ul>     
       </section>
 
-      <section class="discounts">
+      <section class="discounts container tmp">
         <h2 class="visually-hidden">Выгодные предложения</h2>
         <div class="discount discount--raspberries">
           <h3 class="discount__caption">Малинка даром!</h3>
