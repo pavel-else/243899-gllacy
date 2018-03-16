@@ -137,9 +137,10 @@ a:hover {
 }
 
 .new-in-blog__caption {
+  color: #323232;
   font-size: 16px;
   line-height: 22px;
-  color: #323232;
+
 }
 
 .new-in-blog__link {
