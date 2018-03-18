@@ -9,8 +9,8 @@
   </head>
   <body>
     <header class="main-header container tmp">
-      <nav class="navigation tmp">
-        <div class="navigation__wrapper--left tmp">
+      <nav class="navigation">
+        <div class="navigation__wrapper--left">
           <img class="main-header-logo" src="img/svg/logo.svg" width="154" height="64" alt="Gllacy Shop - логотип онлайн-магазина мороженного">
           <ul class="navigation__items">
             <li class="navigation__item"><a href="catalog.html">Каталог</a></li>
@@ -19,10 +19,10 @@
           </ul>
         </div>
 
-        <div class="navigation__wrapper--right tmp">
-          <ul class="user-navigation tmp">
+        <div class="navigation__wrapper--right">
+          <ul class="user-navigation">
             <li>
-              <form class="user-navigation__form--search tmp" action="#" method="post">
+              <form class="user-navigation__form--search" action="#" method="post">
                 <label for="user-navigation__search" class="visually-hidden">Поиск по сайту</label>
                 <input id="user-navigation__search" class="user-navigation__search" type="search" placeholder="Что ищем?">
               </form>
@@ -31,7 +31,7 @@
             </li>
             <li>
               <!--
-                Необходимо перехватить переход по ссылке и вывести форму ввода логина.
+                Необходимо перехватить переход по ссылке и вывести форму ввода логина.                                   
                 Ссылка на страницу нужна на случай, если JS отработал не корректно
               -->
               <a class="user-navigation__login" href="login.html">Вход</a>
@@ -65,25 +65,25 @@
       <section class="slider container tmp">
         <h2 class="visually-hidden">Слайдер</h2>
         <ul class="slider__pages">
-          <li class="slider__page active">
-            <img class="slider__image" src="img/doube-ice-1.png" width="647" height="584" alt="Два рожка с мороженным">
-            <p class="slider__description">Крем-брюле и пломбир с малиновым джемом</p>
-            <a href="#" class="button slider__button">Давайте оба</a>
+          <li class="slider__page active tmp">
+            <img class="slider__image tmp" src="img/doube-ice-1.png" width="647" height="584" alt="Два рожка с мороженным">
+            <p class="slider__description tmp">Крем-брюле и пломбир с малиновым джемом</p>
+            <a href="#" class="button slider__button">Давайте оба!</a>
           </li>
           <li class="slider__page">
             <img class="slider__image" src="img/doube-ice-2.png" width="647" height="584" alt="Изображение второго слайда">
             <p class="slider__description">Крем-брюле и пломбир без малинового джема</p>
-            <a href="#" class="button slider__button">Давайте оба</a>
+            <a href="#" class="button slider__button">Давайте оба!</a>
           </li>
           <li class="slider__page">
             <img class="slider__image" src="img/doube-ice-3.png" width="647" height="584" alt="Изображение третьего слайда">
             <p class="slider__description">Крем-брюле и пломбир с не малиновым джемом</p>
-            <a href="#" class="button slider__button">Давайте оба</a>
+            <a href="#" class="button slider__button">Давайте оба!</a>
           </li>
         </ul>     
       </section>
 
-      <section class="discounts container tmp">
+      <section class="discounts container">
         <h2 class="visually-hidden">Выгодные предложения</h2>
         <div class="discount discount--raspberries">
           <h3 class="discount__caption">Малинка даром!</h3>
