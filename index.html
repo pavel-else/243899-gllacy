@@ -62,7 +62,7 @@
     <main>
       <h1 class="visually-hidden">Глэйси — онлайн-магазин по продаже мороженного</h1>
 
-    	<section class="slider container tmp">
+      <section class="slider container tmp">
         <h2 class="visually-hidden">Слайдер</h2>
         <ul class="slider__pages">
           <li class="slider__page active tmp">
@@ -148,43 +148,43 @@
       </section>
 
       <div class="wrap__news-and-subscription container tmp">
-	      <article class="new-in-blog">
-	        <h2 class="new-in-blog__caption">Новое в нашем блоге</h2>
-	        <a class="new-in-blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-	      </article>
+        <article class="new-in-blog">
+          <h2 class="new-in-blog__caption">Новое в нашем блоге</h2>
+          <a class="new-in-blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+        </article>
 
-	      <section class="subscription">
-	        <h2 class="visually-hidden">Подписка на рассылку</h2>
-	        <p class="subscription__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-	        <form class="subscription__form" action="#">
-	          <label for="subscription__form--email" class="visually-hidden">Электронная почта</label>
-	          <input id="subscription__form--email" type="email" placeholder="Электронная почта">
-	          <button class="button" type="submit">Отправить</button>
-	        </form>
-	      </section>
+        <section class="subscription">
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <p class="subscription__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form class="subscription__form" action="#">
+            <label for="subscription__form--email" class="visually-hidden">Электронная почта</label>
+            <input id="subscription__form--email" type="email" placeholder="Электронная почта">
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </section>
       </div>
 
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраьтся</h2>
-        <img src="img/map.jpg" width="1200" height="430" alt="Главный офис расположен по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <img class="visually-hidden" src="img/map.jpg" width="1200" height="430" alt="Главный офис расположен по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <!-- При изменении ширины страницы указатель сместится и будет показывать неверный адрес.
         <img class="map__pin" src="img/svg/pin.svg" width="80" height="140" alt="Указатель">
-        <!--
-          При изменении ширины страницы указатель сместится и будет показывать неверный адрес.
           Необходимо объединить изображения карты и указателя в один img
         -->
-
-        <div class="map__info">
-          Адрес главного офиса и офлайн-магазина: <br>
-          <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span><br>
-          Для заказов по телефону:<br>
-          <a class="map__tel" href="tel:88124502525">8 812 450-25-25</a><br>
-          (с 10 до 20 ежедневно)
-          <button class="button" type="button" title="Открыть" onclick="">Форма обратной связи</button>
+        <div class="map__container container tmp">
+          <div class="map__info">
+            Адрес главного офиса и офлайн-магазина: <br>
+            <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span><br>
+            Для заказов по телефону:<br>
+            <a class="map__tel" href="tel:88124502525">8 812 450-25-25</a><br>
+            (с 10 до 20 ежедневно)
+            <button class="button map__button" type="button" title="Открыть" onclick="">Форма обратной связи</button>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container tmp">
       <div class="social">
         <ul class="social__items">
           <li class="social__item social__item--tw"><a href="#">Твиттер</a></li>
@@ -196,10 +196,14 @@
 
       <div class="sitelinks">
         <ul class="sitelinks__items">
-          <li><a class="sitelink__link sitelink__link--attention" href="#">Для поставщиков</a></li>
-          <li><a class="sitelink__link" href="#">О производстве</a></li>
-          <li><a class="sitelink__link" href="#">Наши документы</a></li>
-          <li><a class="sitelink__link" href="#">Экологические стандарты</a></li>
+          <div class="sitelinks__wrap">
+            <li><a class="sitelink__link sitelink__link--attention" href="#">Для поставщиков</a></li>
+            <li><a class="sitelink__link" href="#">О производстве</a></li>
+          </div>
+          <div class="sitelinks__wrap">
+            <li><a class="sitelink__link" href="#">Наши документы</a></li>
+            <li><a class="sitelink__link" href="#">Экологические стандарты</a></li>
+          </div>
         </ul>
       </div>
 

@@ -360,7 +360,12 @@ a:hover {
 }
 
 .new-in-blog__link {
+<<<<<<< HEAD
+  display: inline-block;
+  width: 280px;
+=======
   width: 50%;
+>>>>>>> 9cd75ca85008af7cb667e5d13289cb15f525afcb
   font-size: 24px;
   line-height: 30px;
 
@@ -379,38 +384,44 @@ a:hover {
 }
 
 
+/* MAP*/
 .map {
-  position: relative;
-
+  width: 100%;
+  padding-top: 60px;
   background-color: #f7f1d9;
+  background-image: url('../img/map.jpg');
+  background-size: cover;
 }
 
-.map__pin {
-  position: absolute;
-  bottom: 50%;
-  left: 50%;
+.map__container {
+  display: flex;
+  justify-content: flex-end;
 }
-
 .map__info {
+  width: 260px;
+  margin-bottom: 60px;
+  padding: 20px;
   font-size: 14px;
   line-height: 20px;
 
   color: #323232;
   background-color: #fefefe;
+  border-radius: 20px;
 }
 
 .map__info span {
+  display: inline-block;
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
-
   color: #323232;
+  margin-bottom: 15px;
 }
 
 .map__tel {
   font-size: 18px;
   font-weight: bold;
-  line-height: 24px;
+  line-height: 30px;
 
   text-decoration: none;
 
@@ -423,12 +434,27 @@ a:hover {
   color: #323232;
 }
 
+.map__button {
+  display: block;
+  margin-top: 10px;
+}
 
+
+/*FOOTER*/
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
 .social__items {
   list-style: none;
+  display: inline-flex;
+  
 }
 
 .social__item {
+  margin-right: 10px;
   width: 32px;
   height: 32px;
 }
@@ -453,11 +479,29 @@ a:hover {
 
 .sitelinks__items {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 340px;
 }
 
 .sitelink__link {
+  display: flex;
   font-size: 13px;
   line-height: 18px;
+}
+
+.sitelink__link::before {
+  display: block;
+  content: '';
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.sitelink__link--attention::before {
+  background-image: url('../img/svg/heart.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .sitelink__link--attention {
@@ -469,6 +513,7 @@ a:hover {
 
   width: 108px;
   height: 39px;
+  margin-bottom: 10px;
 
   background-image: url('../img/svg/logo-htmlacademy.svg');
 }
@@ -476,4 +521,9 @@ a:hover {
 .footer-copyright {
   font-size: 13px;
   line-height: 18px;
+}
+
+
+.feedback {
+  display: none;
 }
