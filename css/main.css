@@ -1,6 +1,7 @@
 .tmp {
   outline: 1px solid lightgray;
 }
+
 body {
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
@@ -60,18 +61,16 @@ a:hover {
 }
 
 .main-header {
-  z-index: 2;
   margin-top: 15px;
+  padding-bottom: 10px;
 }
 
 .navigation {
   display: flex;
-
   justify-content: space-between;
 }
-.navigation__wrapper--left {
+.navigation__wrapper {
   display: flex;
-
   flex-basis: 560px;
 }
 
@@ -81,28 +80,21 @@ a:hover {
   margin: 0;
   margin-top: 20px;
   padding: 0;
+  font-weight: bold;
+
+  list-style: none;
+
 }
 
 .navigation__item {
   margin-left: 28px;
 }
 
-.navigation__items {
-  font-weight: bold;
-
-  list-style: none;
-}
-
-.navigation__wrapper--right {
-  flex-basis: 267px;
-  display: flex;
-  flex-direction: column;
-
-}
 .user-navigation {
   font-weight: bold;
 
   display: flex;
+  flex-basis: 267px;
 
   margin: 0;
   padding: 0;
@@ -132,11 +124,19 @@ a:hover {
   display: none;
 }
 
+.wrap__bread-crumbs-and-contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; 
+  flex-direction: row-reverse;
+}
+
 .contact-info {
-  align-self: flex-end;
   font-size: 14px;
   font-weight: bold;
   line-height: 16px;
+  margin: 0;
+  order: 1;
 }
 
 .contact-info__tel {
@@ -150,6 +150,33 @@ a:hover {
   text-decoration: none;
 
   color: #fff;
+}
+
+.bread-crumbs {
+  list-style: none;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+  order: 2;
+}
+
+.page--main .bread-crumbs {
+  display: none;
+}
+
+.bread-crumbs__item {
+  margin-right: 5px;
+}
+
+.main-caption {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+/* FILTER*/
+.filter form {
+  display: flex;
 }
 
 /*SLIDER*/
@@ -254,6 +281,8 @@ a:hover {
 
 /* PRODUCTS*/
 .products {
+  display: flex;
+  flex-direction: column;
   padding-top: 35px;
   margin-bottom: 30px
 }
@@ -263,14 +292,18 @@ a:hover {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .product__item {
   display: flex;
+  flex-grow: 1;
+  flex-basis: 25%;
   flex-direction: column;
   align-items: center;
   margin: 0;
   padding: 0;
+  padding-top: 10px;
 }
 
 .product__image {
@@ -282,6 +315,7 @@ a:hover {
   font-weight: bold;
   margin: 0;
   margin-top: -50px;
+  align-self: flex-start;
 }
 
 .product__description {
@@ -293,9 +327,23 @@ a:hover {
   font-size: 30px;
 }
 
+.product__button {
+  display: none;
+}
+
+.pager__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: auto;
+}
+.pager__item {
+  padding: 10px;
+}
+
 
 /* FEATURES*/
-
 .features {
   background-color: #ebd9b8;
   background-image: url('../img/wafer-pattern.jpg');
