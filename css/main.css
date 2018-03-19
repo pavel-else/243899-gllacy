@@ -255,6 +255,7 @@ a:hover {
 /* PRODUCTS*/
 .products {
   padding-top: 35px;
+  margin-bottom: 30px
 }
 
 .product__items {
@@ -293,15 +294,25 @@ a:hover {
 }
 
 
+/* FEATURES*/
 
 .features {
   background-color: #ebd9b8;
   background-image: url('../img/wafer-pattern.jpg');
+  padding-top: 25px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .feature__caption {
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
+  margin-bottom: 30px;
+  margin-left: 20px;
 
   color: #323232;
 }
@@ -310,18 +321,38 @@ a:hover {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .feature__item {
   color: #323232;
+  flex-basis: 520px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 25px;
 }
 
 
+/* NEW AND SUBSCRIPTION*/
+.wrap__news-and-subscription {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
 .new-in-blog {
+  flex-basis: 520px;
   background-color: #fff;
+  padding: 20px;
+  background-image: url('../img/new-in-blog__bg.jpg');
+  border-radius: 20px;
 }
 
 .new-in-blog__caption {
+  margin: 0;
+  margin-bottom: 5px;
   font-size: 16px;
   line-height: 22px;
 
@@ -329,6 +360,7 @@ a:hover {
 }
 
 .new-in-blog__link {
+  width: 50%;
   font-size: 24px;
   line-height: 30px;
 
@@ -336,7 +368,10 @@ a:hover {
 }
 
 .subscription {
+  flex-basis: 520px;
+  padding: 20px;
   background-color: #f8f7f4;
+  border-radius: 20px;
 }
 
 .subscription__description {
