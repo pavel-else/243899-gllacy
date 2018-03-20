@@ -124,7 +124,7 @@ a:hover {
   display: none;
 }
 
-.wrap__bread-crumbs-and-contact-info {
+.bread-crumbs__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-end; 
@@ -181,8 +181,6 @@ a:hover {
 
 /*SLIDER*/
 .slider {
-  z-index: 3;
-//  margin-top: -120px;
 }
 
 .slider__pages {
@@ -384,7 +382,7 @@ a:hover {
 
 
 /* NEW AND SUBSCRIPTION*/
-.wrap__news-and-subscription {
+.new-in-block__wrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
@@ -408,12 +406,9 @@ a:hover {
 }
 
 .new-in-blog__link {
-<<<<<<< HEAD
+
   display: inline-block;
   width: 280px;
-=======
-  width: 50%;
->>>>>>> 9cd75ca85008af7cb667e5d13289cb15f525afcb
   font-size: 24px;
   line-height: 30px;
 
@@ -529,17 +524,27 @@ a:hover {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  width: 340px;
+  margin: 0;
+  padding: 0;
+  width: 330px;
+  justify-content: space-between;
 }
 
+.sitelinks__items li {
+    flex-basis: 50%;
+}
 .sitelink__link {
-  display: flex;
+  display: block;
+  position: relative;
   font-size: 13px;
   line-height: 18px;
+  margin-bottom: 5px;
 }
 
 .sitelink__link::before {
   display: block;
+  position: absolute;
+  left: -25px;
   content: '';
   width: 20px;
   height: 20px;
@@ -564,6 +569,7 @@ a:hover {
   margin-bottom: 10px;
 
   background-image: url('../img/svg/logo-htmlacademy.svg');
+  background-repeat: no-repeat;
 }
 
 .footer-copyright {
