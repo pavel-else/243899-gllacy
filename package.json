@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/pavel-else/243899-gllacy#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
   }
 }
