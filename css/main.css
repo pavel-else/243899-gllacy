@@ -1,4 +1,9 @@
 @charset 'UTF-8';
+
+@font-face {
+  font-family: Roboto; /* Гарнитура шрифта */
+  src: url(fonts/roboto.woff2); /* Путь к файлу со шрифтом */
+}
 .tmp {
   outline: 1px solid lightgray;
 }
