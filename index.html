@@ -91,12 +91,12 @@
         <h2 class="visually-hidden">Выгодные предложения</h2>
         <div class="discount discount--raspberries">
           <h3 class="discount__caption">Малинка даром!</h3>
-          <p class="discount__description">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <p class="discount__description">При покупке 2 /кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
           <a class="button discount__button">Хочу варенье!</a>
         </div>
         <div class="discount discount--chocolate">
           <h3 class="discount__caption">Шоколадки даром!</h3>
-          <p class="discount__description">При покупке 3 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+          <p class="discount__description">При покупке 3 /кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
           <a class="button discount__button">Хочу шоколадки!</a>
         </div>
       </section>
@@ -106,25 +106,25 @@
         <ul class="product__items">
           <li class="product__item tmp">
             <img class="product__image" src="img/ice-1.jpg" width="267" height="267" alt="Сливочное мороженное">
-            <p class="product__price">310 &#x20BD;<span class="product__weight">кг</span></p>
+            <p class="product__price">310 <span class="product__ruble">Р</span><span class="product__weight">/кг</span></p>
             <p class="product__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
             <button class="button product__button">Быстрый просмотр</button>
           </li>          
           <li class="product__item tmp">
             <img class="product__image" src="img/ice-2.jpg" width="267" height="267" alt="Сливочное-кофейное мороженное">
-            <p class="product__price">380 &#x20BD;<span class="product__weight">кг</span></p>
+            <p class="product__price">380 <span class="product__ruble">Р</span><span class="product__weight">/кг</span></p>
             <p class="product__description">Сливочно-кофейное с кусочками шоколада</p>
             <button class="button product__button">Быстрый просмотр</button>
           </li>
           <li class="product__item tmp">
             <img class="product__image" src="img/ice-3.jpg" width="267" height="267" alt="Сливочное мороженное">
-            <p class="product__price">455 &#x20BD;<span class="product__weight">кг</span></p>
+            <p class="product__price">455 <span class="product__ruble">Р</span><span class="product__weight">/кг</span></p>
             <p class="product__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
             <button class="button product__button">Быстрый просмотр</button>
           </li>
           <li class="product__item tmp">
             <img class="product__image" src="img/ice-4.jpg" width="267" height="267" alt="Сливочное мороженное">
-            <p class="product__price">415 &#x20BD;<span class="product__weight">кг</span></p>
+            <p class="product__price">415 <span class="product__ruble">Р</span><span class="product__weight">/кг</span></p>
             <p class="product__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
             <button class="button product__button">Быстрый просмотр</button>
           </li>
@@ -136,16 +136,16 @@
         <p class="feature__caption">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженного собственного производства на развес</p>
 
         <ul class="feature__items">
-          <li class="feature__item">
+          <li class="feature__item feature__item--ice">
             Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
           </li>
-          <li class="feature__item">
+          <li class="feature__item feature__item--eco">
             Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты произведены из натурального, экологически чистого сырья.
           </li>
-          <li class="feature__item">
+          <li class="feature__item feature__item--cow">
             Закупка ингредиентовпроизводится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
           </li>
-          <li class="feature__item">
+          <li class="feature__item feature__item--thermo">
             Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.
           </li>
         </ul>
@@ -158,13 +158,15 @@
         </article>
 
         <section class="subscription">
-          <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <p class="subscription__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form class="subscription__form" action="#">
-            <label for="subscription__form--email" class="visually-hidden">Электронная почта</label>
-            <input id="subscription__form--email" type="email" placeholder="Электронная почта">
-            <button class="button" type="submit">Отправить</button>
-          </form>
+          <div class="subscription__wrap">          
+            <h2 class="visually-hidden">Подписка на рассылку</h2>
+            <p class="subscription__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form class="subscription__form" action="#">
+              <label for="subscription__form--email" class="visually-hidden">Электронная почта</label>
+              <input id="subscription__form--email" class="subscription__form--email" type="email" placeholder="Электронная почта">
+              <button class="button" type="submit">Отправить</button>
+            </form>
+          </div>
         </section>
       </div>
 

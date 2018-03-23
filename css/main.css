@@ -56,7 +56,7 @@ a:hover {
   font-weight: bold;
   line-height: 24px;
 
-  padding: 14px;
+  padding: 14px 20px;
 
   cursor: pointer;
   text-align: center;
@@ -64,6 +64,7 @@ a:hover {
 
   color: #fff;
   border: 0;
+  border-radius: 26px;
   background-color: #e9563a;
 }
 
@@ -157,6 +158,7 @@ a:hover {
   padding-right: 20px;
   padding-left: 45px;
 }
+
 .u-nav__button--login::after {
   position: absolute;
   top: 0;
@@ -324,6 +326,8 @@ a:hover {
 
   padding: 25px;
 
+  border-radius: 20px;
+
   flex-basis: 510px;
 }
 
@@ -407,10 +411,26 @@ a:hover {
   font-weight: bold;
   line-height: 35px;
 
+  display: inline-flex;
+
   margin: 0;
   margin-top: -50px;
 
   align-self: flex-start;
+  align-items: center;
+}
+.product__ruble {
+  font-size: 0;
+
+  display: block;
+
+  width: 25px;
+  height: 25px;
+  margin: 0 3px;
+
+  background-image: url('../img/svg/ruble.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .product__description {
@@ -469,7 +489,7 @@ a:hover {
   display: flex;
 
   margin: 0;
-  padding: 0;
+  padding: 0 20px 40px;
 
   list-style: none;
 
@@ -478,16 +498,44 @@ a:hover {
 }
 
 .feature__item {
-  margin-bottom: 25px;
+  position: relative;
+
+  padding-top: 20px;
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 60px;
 
   color: #323232;
 
-  flex-basis: 520px;
+  flex-basis: 450px;
+}
+.feature__item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+
+  width: 50px;
+  height: 50px;
+
+  content: '';
+
+  background-repeat: no-repeat;
+}
+.feature__item--ice::before {
+  background-image: url('../img/svg/ice-cream.svg');
+}
+.feature__item--eco::before {
+  background-image: url('../img/svg/eco.svg');
+}
+.feature__item--cow::before {
+  background-image: url('../img/svg/cow.svg');
+}
+.feature__item--thermo::before {
+  background-image: url('../img/svg/thermometer.svg');
 }
 
-/* NEW AND SUBSCRIPTION*/
+/* NEWS AND SUBSCRIPTION*/
 .new-in-block__wrapper {
   display: flex;
 
@@ -529,16 +577,35 @@ a:hover {
 }
 
 .subscription {
-  padding: 20px;
+  padding: 5px;
 
   border-radius: 20px;
-  background-color: #f8f7f4;
+  background-image: url('../img/svg/bg-post.svg');
 
   flex-basis: 520px;
 }
 
+.subscription__wrap {
+  padding: 15px;
+
+  border-radius: 15px;
+  background-color: #f8f7f4;
+}
+
 .subscription__description {
   color: #323232;
+}
+
+.subscription__form {
+  display: flex;
+}
+
+.subscription__form--email {
+  line-height: 40px;
+
+  margin-right: 10px;
+
+  flex-grow: 1;
 }
 
 /* MAP*/
