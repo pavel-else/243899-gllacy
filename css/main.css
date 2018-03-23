@@ -110,51 +110,54 @@ a:hover {
   margin-right: 28px;
 }
 
-.u-nav {
+/*USER-NAV*/
+.user-nav {
   font-weight: bold;
 
   display: flex;
 
   margin: 0;
+  margin-top: 15px;
   padding: 0;
 
   list-style: none;
 
   flex-basis: 267px;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
-.u-nav__search {
-  display: none;
+.user-nav__item {
+  margin-left: 9px;
 }
 
-.u-nav__button {
+.user-nav__button {
   position: relative;
 
   display: block;
 
-  min-width: 36px;
-  height: 36px;
+  min-width: 32px;
+  height: 32px;
 
   cursor: pointer;
 
   color: #fff;
   border: none;
-  border-radius: 18px;
+  border-radius: 16px;
   background-color: rgba(256, 256, 256, .5);
 }
-.u-nav__button--search {
+
+.user-nav__button--search {
   font-size: 0;
 }
-.u-nav__button--search::after {
+.user-nav__button--search::after {
   position: absolute;
   top: 0;
   right: 0;
 
   display: block;
 
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
 
   content: '' ;
 
@@ -163,20 +166,25 @@ a:hover {
   background-position: 50% 50%;
 }
 
-.u-nav__button--login {
-  padding-right: 20px;
-  padding-left: 45px;
+.user-nav__search {
+  /*form*/
+  display: none;
 }
 
-.u-nav__button--login::after {
+.user-nav__button--login {
+  padding-right: 15px;
+  padding-left: 42px;
+}
+
+.user-nav__button--login::after {
   position: absolute;
   top: 0;
-  left: 10px;
+  left: 11px;
 
   display: block;
 
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
 
   content: '';
 
@@ -185,24 +193,24 @@ a:hover {
   background-position: 50% 50%;
 }
 
-.u-nav__form--login {
+.user-nav__form--login {
   /*form*/
   display: none;
 }
 
-.u-nav__button--basket {
-  padding-right: 20px;
+.user-nav__button--basket {
+  padding-right: 30px;
   padding-left: 45px;
 }
-.u-nav__button--basket::after {
+.user-nav__button--basket::after {
   position: absolute;
   top: 0;
   left: 10px;
 
   display: block;
 
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
 
   content: '';
 
@@ -210,6 +218,7 @@ a:hover {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+
 .bread-crumbs__wrapper {
   display: flex;
   flex-direction: row-reverse;

@@ -19,33 +19,33 @@
           </ul>
         </div>
 
-        <ul class="u-nav">
-          <li>
-            <button class="u-nav__button u-nav__button--search">Поиск</button>
-            <form class="u-nav__form--search" action="#" method="post">
-              <label for="u-nav__search" class="visually-hidden">Поиск по сайту</label>
-              <input id="u-nav__search" class="u-nav__search" type="search" placeholder="Что ищем?">
+        <ul class="user-nav">
+          <li class="user-nav__item">
+            <button class="user-nav__button user-nav__button--search">Поиск</button>
+            <form class="user-nav__form--search" action="#" method="post">
+              <label for="user-nav__search" class="visually-hidden">Поиск по сайту</label>
+              <input id="user-nav__search" class="user-nav__search" type="search" placeholder="Что ищем?">
             </form>
           </li>
-          <li>
+          <li class="user-nav__item">
             <!--
               Необходимо перехватить переход по ссылке и вывести форму ввода логина.                                   
               Ссылка на страницу нужна на случай, если JS отработал не корректно
             -->
-            <button class="u-nav__button u-nav__button--login" href="login.html">Вход</button>
-            <form class="u-nav__form--login" action="#" method="post">
-              <label for="u-nav__login--email" class="visually-hidden">Электронная почта</label>
-              <input id="u-nav__login--email" type="email" placeholder="Электронная почта">
+            <button class="user-nav__button user-nav__button--login" href="login.html">Вход</button>
+            <form class="user-nav__form--login" action="#" method="post">
+              <label for="user-nav__login--email" class="visually-hidden">Электронная почта</label>
+              <input id="user-nav__login--email" type="email" placeholder="Электронная почта">
 
-              <label for="u-nav__login--pass" class="visually-hidden">Пароль</label>
-              <input id="u-nav__login--pass" type="password" placeholder="Пароль">
+              <label for="user-nav__login--pass" class="visually-hidden">Пароль</label>
+              <input id="user-nav__login--pass" type="password" placeholder="Пароль">
               <button type="submit" class="button">Войти</button>
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </form>
           </li>
-          <li>
-            <button class="u-nav__button u-nav__button--basket">Пусто</button>
+          <li class="user-nav__item">
+            <button class="user-nav__button user-nav__button--basket">Пусто</button>
           </li>
         </ul>
       </nav>
