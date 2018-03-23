@@ -19,33 +19,33 @@
           </ul>
         </div>
 
-        <ul class="user-navigation">
+        <ul class="u-nav">
           <li>
-            <form class="user-navigation__form--search" action="#" method="post">
-              <label for="user-navigation__search" class="visually-hidden">Поиск по сайту</label>
-              <input id="user-navigation__search" class="user-navigation__search" type="search" placeholder="Что ищем?">
+            <button class="u-nav__button u-nav__button--search">Поиск</button>
+            <form class="u-nav__form--search" action="#" method="post">
+              <label for="u-nav__search" class="visually-hidden">Поиск по сайту</label>
+              <input id="u-nav__search" class="u-nav__search" type="search" placeholder="Что ищем?">
             </form>
-            <button class="user-navigation__button"><img src="img/svg/loupe.svg" alt="">Поиск</button>
           </li>
           <li>
             <!--
               Необходимо перехватить переход по ссылке и вывести форму ввода логина.                                   
               Ссылка на страницу нужна на случай, если JS отработал не корректно
             -->
-            <a class="user-navigation__login" href="login.html">Вход</a>
-            <form class="user-navigation__form--login" action="#" method="post">
-              <label for="user-navigation__login--email" class="visually-hidden">Электронная почта</label>
-              <input id="user-navigation__login--email" type="email" placeholder="Электронная почта">
+            <button class="u-nav__button u-nav__button--login" href="login.html">Вход</button>
+            <form class="u-nav__form--login" action="#" method="post">
+              <label for="u-nav__login--email" class="visually-hidden">Электронная почта</label>
+              <input id="u-nav__login--email" type="email" placeholder="Электронная почта">
 
-              <label for="user-navigation__login--pass" class="visually-hidden">Пароль</label>
-              <input id="user-navigation__login--pass" type="password" placeholder="Пароль">
+              <label for="u-nav__login--pass" class="visually-hidden">Пароль</label>
+              <input id="u-nav__login--pass" type="password" placeholder="Пароль">
               <button type="submit" class="button">Войти</button>
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </form>
           </li>
           <li>
-            <button class="button">Корзина</button>
+            <button class="u-nav__button u-nav__button--basket">Пусто</button>
           </li>
         </ul>
       </nav>
@@ -76,12 +76,12 @@
           </li>
           <li class="slider__page">
             <img class="slider__image" src="img/doube-ice-2.png" width="647" height="584" alt="Изображение второго слайда">
-            <p class="slider__description">Крем-брюле и пломбир без малинового джема</p>
+            <p class="slider__description">Шоколадный пломбир и лимонный сорбет</p>
             <a href="#" class="button slider__button">Давайте оба!</a>
           </li>
           <li class="slider__page">
             <img class="slider__image" src="img/doube-ice-3.png" width="647" height="584" alt="Изображение третьего слайда">
-            <p class="slider__description">Крем-брюле и пломбир с не малиновым джемом</p>
+            <p class="slider__description">Пломбир с помадкой и клубничный щербет</p>
             <a href="#" class="button slider__button">Давайте оба!</a>
           </li>
         </ul>     
