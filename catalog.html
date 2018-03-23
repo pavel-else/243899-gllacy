@@ -13,26 +13,26 @@
         <div class="navigation__wrapper">
           <img class="main-header-logo" src="img/svg/logo.svg" width="154" height="64" alt="Gllacy Shop - логотип онлайн-магазина мороженного">
           <ul class="navigation__items">
-            <li class="navigation__item"><a href="catalog.html">Каталог</a></li>
-            <li class="navigation__item"><a href="delivery.html">Доставка и оплата</a></li>
-            <li class="navigation__item"><a href="about.html">О компании</a></li>
+            <li class="navigation__item"><a class="navigation__item--link" href="catalog.html"><span>Каталог</span></a></li>
+            <li class="navigation__item"><a class="navigation__item--link" href="delivery.html"><span>Доставка и оплата</span></a></li>
+            <li class="navigation__item"><a class="navigation__item--link" href="about.html"><span>О Компании</span></a></li>
           </ul>
         </div>
 
         <ul class="user-nav">
-          <li>
+          <li class="user-nav__item">
+            <button class="user-nav__button user-nav__button--search">Поиск</button>
             <form class="user-nav__form--search" action="#" method="post">
               <label for="user-nav__search" class="visually-hidden">Поиск по сайту</label>
               <input id="user-nav__search" class="user-nav__search" type="search" placeholder="Что ищем?">
             </form>
-            <button class="user-nav__button"><img src="img/svg/loupe.svg" alt="">Поиск</button>
           </li>
-          <li>
+          <li class="user-nav__item">
             <!--
               Необходимо перехватить переход по ссылке и вывести форму ввода логина.                                   
               Ссылка на страницу нужна на случай, если JS отработал не корректно
             -->
-            <a class="user-nav__login" href="login.html">Вход</a>
+            <button class="user-nav__button user-nav__button--login" href="login.html">Вход</button>
             <form class="user-nav__form--login" action="#" method="post">
               <label for="user-nav__login--email" class="visually-hidden">Электронная почта</label>
               <input id="user-nav__login--email" type="email" placeholder="Электронная почта">
@@ -44,8 +44,8 @@
               <a href="#">Новая регистрация</a>
             </form>
           </li>
-          <li>
-            <button class="button">Корзина</button>
+          <li class="user-nav__item">
+            <button class="user-nav__button user-nav__button--basket">Пусто</button>
           </li>
         </ul>
       </nav>
@@ -63,7 +63,9 @@
       </div>
     </header>
 
-    <main class="container tmp">
+    <main>
+    <div class="main__wrap container tmp">
+        
       <h1 class="main-caption">Сливочное мороженное</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -118,7 +120,7 @@
         </form>
       </section>
 
-      <section class="products">
+      <section class="product">
         <h2 class="visually-hidden">Товары</h2>
         <ul class="product__items">
           <li class="product__item">
@@ -202,6 +204,7 @@
           <li class="pager__item"><a href="#">5</a></li>
         </ul>
       </section>
+    </div>
     </main>
 
     <footer class="main-footer container tmp">
@@ -214,12 +217,12 @@
         </ul>
       </div>
 
-      <div class="sitelinks">
-        <ul class="sitelinks__items">
-          <li><a class="sitelink__link sitelink__link--attention" href="#">Для поставщиков</a></li>
-          <li><a class="sitelink__link" href="#">Наши документы</a></li>
-          <li><a class="sitelink__link" href="#">О производстве</a></li>
-          <li><a class="sitelink__link" href="#">Экологические стандарты</a></li>
+      <div class="sitelink">
+        <ul class="sitelink__items">
+          <li><a class="sitelink__link sitelink__link--attention" href="#"><span class="underline">Для поставщиков</span></a></li>
+          <li><a class="sitelink__link" href="#"><span class="underline">Наши документы</span></a></li>
+          <li><a class="sitelink__link" href="#"><span class="underline">О производстве</span></a></li>
+          <li><a class="sitelink__link" href="#"><span class="underline">Экологические стандарты</span></a></li>
         </ul>
       </div>
 
