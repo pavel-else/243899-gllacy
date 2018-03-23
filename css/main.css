@@ -5,6 +5,7 @@
 
   src: url(fonts/roboto.woff2); /* Путь к файлу со шрифтом */
 }
+
 .tmp {
   outline: 1px solid lightgray;
 }
@@ -24,10 +25,14 @@ body {
 
 a {
   color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(256, 256, 256, 0.5);
 }
 
 a:hover {
   color: #ffbc9e;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(256, 188, 158, 0.5);
 }
 
 .container {
@@ -69,7 +74,7 @@ a:hover {
 }
 
 .main-header {
-  margin-top: 20px;
+  margin-top: 10px;
   padding-bottom: 10px;
 }
 
@@ -85,6 +90,10 @@ a:hover {
   flex-basis: 560px;
 }
 
+.main-header-logo {
+  margin-right: 23px;
+}
+
 .navigation__items {
   font-weight: bold;
 
@@ -98,7 +107,7 @@ a:hover {
 }
 
 .navigation__item {
-  margin-left: 28px;
+  margin-right: 28px;
 }
 
 .u-nav {
