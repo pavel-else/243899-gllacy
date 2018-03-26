@@ -114,12 +114,14 @@ a:hover {
   list-style: none;
 }
 
-
+.navigation__item {
+  position: relative;
+}
 
 .navigation__item--link {
   display: block;
 
-  padding: 10px 14px;
+  padding: 5px 14px;
 
   border: none;
 }
@@ -131,6 +133,60 @@ a:hover {
 }
 .navigation__item--link span:hover {
   border-bottom: none;
+}
+
+.navigation__item:hover .sub-navigation__items {
+  display: block;
+}
+
+.sub-navigation__items {
+  display: none;
+  width: 143px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: absolute;
+  left: -6px;
+  list-style: none;
+  margin: 0;
+  margin-top: 5px;
+  padding: 5px 0px 0;
+  background-color: #f8f7f4;
+  color: #323232;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+}
+
+.sub-navigation__items::before {
+  content: 'Новинки';
+  border-bottom: 1px solid #d1d0ce;
+  display: block;
+  padding: 5px 19px 13px;
+  line-height: 16px;
+  font-size: 14px
+
+}
+
+.sub-navigation__link {
+  display: block;
+  color: #323232;
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: normal;
+/*  text-decoration: underline;*/
+  padding: 10px 19px 5px;
+}
+
+.sub-navigation__item:last-child > a {
+  padding-bottom: 12px;
+  border-radius: 5px;
+}
+
+.sub-navigation__link:hover {
+  background-color: #fbded7;
+  color: #323232;
+}
+.sub-navigation__link:active {
+  background-color: #f6b5a5;
+  color: #323232;
 }
 
 /*USER-NAV*/
