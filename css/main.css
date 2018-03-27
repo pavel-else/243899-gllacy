@@ -206,6 +206,7 @@ a:hover {
 }
 
 .user-nav__item {
+  position: relative;
   margin-left: 9px;
 }
 
@@ -245,9 +246,17 @@ a:hover {
   background-position: 50% 50%;
 }
 
-.user-nav__search {
+
+.user-nav__form--search {
   /*form*/
   display: none;
+  position: absolute;
+  right: 0;
+  width: 344px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.user-nav__search {
 }
 
 .user-nav__button--login {
@@ -275,6 +284,8 @@ a:hover {
 .user-nav__form--login {
   /*form*/
   display: none;
+  background-color: #f8f7f5;
+  color: #323232;
 }
 
 .user-nav__button--basket {
@@ -390,6 +401,8 @@ a:hover {
   position: absolute;
   z-index: -1;
   top: 0;
+  left: 50%;
+  margin-left: -525px;
 
   width: 1050px;
   height: auto;
@@ -483,6 +496,7 @@ a:hover {
   background-color: #a82c3e;
   /*Заменить фоновые изображения - импортировать без закруглений*/
   background-image: url('../img/raspberry-bg.jpg');
+  background-size: cover;
 }
 
 .discount--chocolate {
