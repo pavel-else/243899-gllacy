@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-<!--     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
   </head>
@@ -41,18 +41,18 @@
               Ссылка на страницу нужна на случай, если JS отработал не корректно
               !
             -->
-            <button class="user-nav__button login__button">Вход</button>
+            <button class="user-nav__button user-nav__button--login">Вход</button>
             <form class="login__form" action="#" method="post">
               <label for="login__email" class="visually-hidden">Электронная почта</label>
-              <input id="login__email" type="email" placeholder="Электронная почта">
+              <input id="login__email" class="login__input login__input--email"type="email" placeholder="Электронная почта">
 
               <label for="login__pass" class="visually-hidden">Пароль</label>
-              <input id="login__pass" type="password" placeholder="Пароль">
+              <input id="login__pass" class="login__input login__input--pass" type="password" placeholder="Пароль">
               <div class="login__wrapper">
-                <button type="submit" class="button">Войти</button>
+                <button type="submit" class="button login__button">Войти</button>
                 <div class="login__wrapper--link">
-                  <a href="#">Забыли пароль?</a>
-                  <a href="#">Новая регистрация</a>
+                  <a href="#" class="login__link"><span class="underline">Забыли пароль?</span></a>
+                  <a href="#" class="login__link"><span class="underline">Новая регистрация</span></a>
                 </div>
               </div>
             </form>
