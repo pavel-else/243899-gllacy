@@ -273,12 +273,12 @@ a:hover {
 }
 
 
-.user-nav__button--login {
+.login__button {
   padding-right: 15px;
   padding-left: 42px;
 }
 
-.user-nav__button--login::after {
+.login__button::after {
   position: absolute;
   top: 0;
   left: 11px;
@@ -295,11 +295,26 @@ a:hover {
   background-position: 50% 50%;
 }
 
-.user-nav__form--login {
+.login__form {
   /*form*/
-  display: none;
+  /*display: none;*/
+  position: absolute;
+  right: 0;
   background-color: #f8f7f5;
   color: #323232;
+}
+
+.login__form a {
+  color: #323232;
+}
+
+.login__wrapper {
+  display: flex;
+}
+
+.login__wrapper--link {
+  display: flex;
+  flex-direction: column;
 }
 
 .user-nav__button--basket {
