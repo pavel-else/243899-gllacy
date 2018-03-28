@@ -258,20 +258,21 @@
 
     <section class="feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <p>Мы обязательно вам ответим</p>
+      <p class="feedback__caption">Мы обязательно вам ответим!</p>
       <form class="feedback__form" action="https://echo.htmlacademy.ru">
         <label for="feedback__name" class="feedback__label feedback__label--name visually-hidden">Как вас зовут?</label>
-        <input type="text" name="feedback__name" id="feedback__name" placeholder="Как вас зовут?">
+        <input type="text" name="feedback__name" class="feedback__input feedback__input--name" id="feedback__name" placeholder="Как вас зовут?">
 
         <label for="feedback__email" class="feedback__label feedback__label--email visually-hidden">Ваша почта для ответа?</label>
-        <input type="text" name="feedback__email" id="feedback__email" placeholder="Ваша почта для ответа?">
+        <input type="text" name="feedback__email" class="feedback__input feedback__input--email" id="feedback__email" placeholder="Ваша почта для ответа?">
 
         <label for="feedback__text" class="feedback__label feedback__label--text visually-hidden">Напишите что-нибудь...</label>
-        <textarea name="feedback__text" id="feedback__text" cols="30" rows="10">Напишите что-нибудь...</textarea>
+        <textarea name="feedback__text" class="feddback__textarea" id="feedback__text" cols="30" rows="8" placeholder="Напишите что-нибудь..."></textarea>
 
-        <button type="submit" class="button feedback__submit">Отправить</button>
+        <button type="submit" class="button feedback__button--submit">Отправить</button>
       </form>
-      <button class="feedback__close">Закрыть форму</button>
+      <button class="feedback__button--close">Закрыть форму</button>
     </section>
+    <div class="overlay"></div>
   </body>
 </html>

@@ -1214,5 +1214,89 @@ a:hover {
 }
 
 .feedback {
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  right: 50%;
+
   display: none;
+
+  box-sizing: border-box;
+  width: 477px;
+  margin-top: -108px;
+  margin-right: -208px;
+  padding: 16px 24px;
+
+  border-radius: 10px;
+  background-color: #f8f7f4;
+}
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+}
+.feedback__caption {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+
+  margin: 0;
+  margin-bottom: 18px;
+
+  color: #323232;
+}
+
+.feedback__input {
+  box-sizing: border-box;
+  width: 267px;
+  height: 44px;
+  margin-bottom: 20px;
+  padding-left: 11px;
+}
+.feddback__textarea {
+  height: 140px;
+  margin-bottom: 25px;
+  padding-top: 11px;
+  padding-left: 13px;
+
+  resize: none;
+}
+
+.feedback__button--submit {
+  margin-bottom: 10px;
+  padding: 9px 23px 12px 23px;
+
+  align-self: flex-end;
+}
+
+.feedback__button--close {
+  font-size: 0;
+
+  position: absolute;
+  top: 14px;
+  right: 16px;
+
+  width: 18px;
+  height: 18px;
+  padding: 0;
+
+  cursor: pointer;
+
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url('../img/svg/cross-small.svg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: none;
+
+  background-color: rgba(0, 0, 0, .3);
 }
