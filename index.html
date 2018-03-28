@@ -30,7 +30,7 @@
         <ul class="user-nav">
           <li class="user-nav__item">
             <button class="user-nav__button user-nav__button--search">Поиск</button>
-            <form class="user-nav__form--search" action="#" method="post">
+            <form class="user-nav__form--search" action="https://echo.htmlacademy.ru" method="post">
               <label for="user-nav__search" class="visually-hidden">Поиск по сайту</label>
               <input id="user-nav__search" class="user-nav__search" type="search" placeholder="Что ищем?">
             </form>
@@ -42,9 +42,9 @@
               !
             -->
             <button class="user-nav__button user-nav__button--login">Вход</button>
-            <form class="login__form" action="#" method="post">
+            <form class="login__form" action="https://echo.htmlacademy.ru" method="post">
               <label for="login__email" class="visually-hidden">Электронная почта</label>
-              <input id="login__email" class="login__input login__input--email"type="email" placeholder="Электронная почта">
+              <input id="login__email" class="login__input login__input--email" type="email" placeholder="Электронная почта">
 
               <label for="login__pass" class="visually-hidden">Пароль</label>
               <input id="login__pass" class="login__input login__input--pass" type="password" placeholder="Пароль">
@@ -57,13 +57,33 @@
               </div>
             </form>
           </li>
-          <li class="user-nav__item">
+          <li class="user-nav__item basket"><!--not-empty-->
             <button class="user-nav__button user-nav__button--basket">Пусто</button>
+            <div class="basket__form">
+              <table class="basket__table">
+                <tr class="basket__row">
+                  <td class="basket__cell"><div class="basket__rm"></div></td>
+                  <td class="basket__cell"><img class="basket__image" src="img/ice-1.jpg" width="33" height="33" alt="Сливочное мороженое"></td>
+                  <td class="basket__cell"><div class="basket__description">Пломбир с апельсиновым джемом</div></td>
+                  <td class="basket__cell"><div class="basket__price">1,5 кг х 200 руб.</div></td>
+                  <td class="basket__cell"><div class="basket__equally">300 руб.</div></td>
+                </tr>
+                <tr class="basket__row">
+                  <td class="basket__cell"><div class="basket__rm"></div></td>
+                  <td class="basket__cell"><img class="basket__image" src="img/ice-3.jpg" width="33" height="33" alt="Сливочное мороженое"></td>
+                  <td class="basket__cell"><div class="basket__description">Клубничный пломбир с присыпкой из белого шоколада</div></td>
+                  <td class="basket__cell"><div class="basket__price">1,5 кг х 300 руб.</div></td>
+                  <td class="basket__cell"><div class="basket__equally">450 руб.</div></td>
+                </tr>
+              </table>
+              <p class="basket__total">Итого: 750 руб.</p>
+              <a class="button basket__button" href="#">Оформить заказ</a>
+            </div>
           </li>
         </ul>
       </nav>
 
-      <div class="bread-crumbs__wrapper">
+      <div class="header-bottom-wrapper">
         <ul class="bread-crumbs">
           <li class="bread-crumbs__item"><a href="index.html">Главная</a></li>
           <li class="bread-crumbs__item"><a href="#">Каталог</a></li>
@@ -176,7 +196,7 @@
           <div class="subscription__wrap">          
             <h2 class="visually-hidden">Подписка на рассылку</h2>
             <p class="subscription__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form class="subscription__form" action="#">
+            <form class="subscription__form" action="https://echo.htmlacademy.ru">
               <label for="subscription__form--email" class="visually-hidden">Электронная почта</label>
               <input id="subscription__form--email" class="subscription__form--email" type="email" placeholder="Электронная почта">
               <button class="button" type="submit">Отправить</button>
@@ -230,7 +250,7 @@
     <section class="feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p>Мы обязательно вам ответим</p>
-      <form class="feedback__form" action="#">
+      <form class="feedback__form" action="https://echo.htmlacademy.ru">
         <label for="feedback__name" class="feedback__label feedback__label--name visually-hidden">Как вас зовут?</label>
         <input type="text" name="feedback__name" id="feedback__name" placeholder="Как вас зовут?">
 

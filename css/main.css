@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -119,7 +119,8 @@ a:hover {
 
   border: none;
 }
-.navigation__item--link:hover {
+.navigation__item--link:hover,
+.navigation__item:hover  .navigation__item--link {
   color: #323232;
   border: none;
   border-radius: 30px;
@@ -154,7 +155,7 @@ a:hover {
 }
 
 .sub-navigation__items::before {
-  font-size: 14px;;
+  font-size: 14px;
   line-height: 16px;
 
   display: block;
@@ -163,7 +164,7 @@ a:hover {
 
   content: 'Новинки';
 
-  border-bottom: 1px solid #d1d0ce;
+  border-bottom: 1px solid #d1d0ce;;
 }
 
 .sub-navigation__link {
@@ -304,11 +305,16 @@ a:hover {
   background-position: 50% 50%;
 }
 
+.login:hover .login__form {
+  display: block;
+}
+
 .login__form {
-  /*display: none;*/
   position: absolute;
   top: 36px;
   right: 0;
+
+  display: none;
 
   box-sizing: border-box;
   width: 277px;
@@ -320,6 +326,7 @@ a:hover {
   background-color: #f8f7f5;
   box-shadow: 0 20px 30px rgba(0,0,0,.5);
 }
+
 .login__input {
   font-size: 14px;
   line-height: 24px;
@@ -365,6 +372,7 @@ a:hover {
   border-bottom-color: rgba(256, 188, 158, .3);
 }
 
+/*BASKET*/
 .user-nav__button--basket {
   padding-right: 30px;
   padding-left: 45px;
@@ -386,7 +394,107 @@ a:hover {
   background-position: 50% 50%;
 }
 
-.bread-crumbs__wrapper {
+.basket.not-empty:hover .basket__form {
+  display: block;
+}
+
+.basket__form {
+  display: none;
+}
+.not-empty .user-nav__button--basket::after {
+  background-image: url('../img/svg/basket-red.svg');
+}
+
+
+.not-empty .basket__form {
+  position: absolute;
+  top: 36px;
+  right: 0;
+
+  box-sizing: border-box;
+  width: 539px;
+  padding: 6px 13px;
+
+  border-radius: 5px;
+  background-color: #f8f7f4;
+}
+
+.basket__table {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 16px;
+
+  border-spacing: 0 14px;
+
+  color: #323232;
+  border: none;
+  border-bottom: 1px solid #cacac7;
+}
+
+.basket__cell {
+  vertical-align: top;
+}
+
+.basket__rm {
+  width: 23px;
+  height: 23px;
+
+  background-image: url('../img/svg/cross-small.svg');
+  background-repeat: no-repeat;
+  background-position: center 10px;
+}
+
+.basket__image {
+  width: 33px
+  height: 33px;
+  margin-left: 3px;
+
+  border-radius: 50%;
+}
+
+.basket__description {
+  width: 220px;
+  padding-top: 8px;
+  padding-left: 10px;
+}
+
+.basket__price {
+  padding-top: 8px;
+  padding-left: 25px;
+}
+
+.basket__equally {
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-left: 26px;
+}
+
+.basket__total {
+  font-size: 15px;
+  line-height: 18px;
+
+  margin: 0;
+  margin-bottom: 14px;
+  margin-left: auto;
+  padding: 0;
+  padding-top: 15px;
+
+  text-align: right;
+
+  color: #323232;
+}
+
+.basket__button {
+  display: block;
+
+  box-sizing: border-box;
+  width: 170px;
+  margin-bottom: 13px;
+  margin-left: auto;
+  padding: 9px 1px 13px;
+}
+
+.header-bottom-wrapper {
   display: flex;
   flex-direction: row-reverse;
 

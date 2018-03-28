@@ -8,49 +8,82 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body class="page page--catalog">
-    <header class="main-header container tmp">
+    <header class="main-header container">
       <nav class="navigation">
         <div class="navigation__wrapper">
           <img class="main-header-logo" src="img/svg/logo.svg" width="154" height="64" alt="Gllacy Shop - логотип онлайн-магазина мороженого">
           <ul class="navigation__items">
-            <li class="navigation__item"><a class="navigation__item--link" href="catalog.html"><span>Каталог</span></a></li>
-            <li class="navigation__item"><a class="navigation__item--link" href="delivery.html"><span>Доставка и оплата</span></a></li>
-            <li class="navigation__item"><a class="navigation__item--link" href="about.html"><span>О Компании</span></a></li>
+            <li class="navigation__item">
+              <a class="navigation__item--link" href="catalog.html"><span class="underline">Каталог</span></a>
+              <ul class="sub-navigation__items">
+                <li class="sub-navigation__item"><a class="sub-navigation__link" href="#">Сливочное</a></li>
+                <li class="sub-navigation__item"><a class="sub-navigation__link" href="#">Щербеты</a></li>
+                <li class="sub-navigation__item"><a class="sub-navigation__link" href="#">Фруктовый лед</a></li>
+                <li class="sub-navigation__item"><a class="sub-navigation__link" href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li class="navigation__item"><a class="navigation__item--link" href="delivery.html"><span class="underline">Доставка и оплата</span></a></li>
+            <li class="navigation__item"><a class="navigation__item--link" href="about.html"><span class="underline">О Компании</span></a></li>
           </ul>
         </div>
 
         <ul class="user-nav">
           <li class="user-nav__item">
             <button class="user-nav__button user-nav__button--search">Поиск</button>
-            <form class="user-nav__form--search" action="#" method="post">
+            <form class="user-nav__form--search" action="https://echo.htmlacademy.ru" method="post">
               <label for="user-nav__search" class="visually-hidden">Поиск по сайту</label>
               <input id="user-nav__search" class="user-nav__search" type="search" placeholder="Что ищем?">
             </form>
           </li>
-          <li class="user-nav__item">
+          <li class="user-nav__item login">
             <!--
               Необходимо перехватить переход по ссылке и вывести форму ввода логина.                                   
               Ссылка на страницу нужна на случай, если JS отработал не корректно
+              !
             -->
-            <button class="user-nav__button login__button" href="login.html">Вход</button>
-            <form class="login__form" action="#" method="post">
+            <button class="user-nav__button user-nav__button--login">Вход</button>
+            <form class="login__form" action="https://echo.htmlacademy.ru" method="post">
               <label for="login__email" class="visually-hidden">Электронная почта</label>
-              <input id="login__email" type="email" placeholder="Электронная почта">
+              <input id="login__email" class="login__input login__input--email" type="email" placeholder="Электронная почта">
 
               <label for="login__pass" class="visually-hidden">Пароль</label>
-              <input id="login__pass" type="password" placeholder="Пароль">
-              <button type="submit" class="button">Войти</button>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
+              <input id="login__pass" class="login__input login__input--pass" type="password" placeholder="Пароль">
+              <div class="login__wrapper">
+                <button type="submit" class="button login__button">Войти</button>
+                <div class="login__wrapper--link">
+                  <a href="#" class="login__link"><span class="underline">Забыли пароль?</span></a>
+                  <a href="#" class="login__link"><span class="underline">Новая регистрация</span></a>
+                </div>
+              </div>
             </form>
           </li>
-          <li class="user-nav__item">
+          <li class="user-nav__item basket"><!--not-empty-->
             <button class="user-nav__button user-nav__button--basket">Пусто</button>
+            <div class="basket__form">
+              <table class="basket__table">
+                <tr class="basket__row">
+                  <td class="basket__cell"><div class="basket__rm"></div></td>
+                  <td class="basket__cell"><img class="basket__image" src="img/ice-1.jpg" width="33" height="33" alt="Сливочное мороженое"></td>
+                  <td class="basket__cell"><div class="basket__description">Пломбир с апельсиновым джемом</div></td>
+                  <td class="basket__cell"><div class="basket__price">1,5 кг х 200 руб.</div></td>
+                  <td class="basket__cell"><div class="basket__equally">300 руб.</div></td>
+                </tr>
+                <tr class="basket__row">
+                  <td class="basket__cell"><div class="basket__rm"></div></td>
+                  <td class="basket__cell"><img class="basket__image" src="img/ice-3.jpg" width="33" height="33" alt="Сливочное мороженое"></td>
+                  <td class="basket__cell"><div class="basket__description">Клубничный пломбир с присыпкой из белого шоколада</div></td>
+                  <td class="basket__cell"><div class="basket__price">1,5 кг х 300 руб.</div></td>
+                  <td class="basket__cell"><div class="basket__equally">450 руб.</div></td>
+                </tr>
+              </table>
+              <p class="basket__total">Итого: 750 руб.</p>
+              <a class="button basket__button" href="#">Оформить заказ</a>
+            </div>
           </li>
         </ul>
       </nav>
 
-      <div class="bread-crumbs__wrapper">
+      <div class="header-bottom-wrapper">
         <ul class="bread-crumbs">
           <li class="bread-crumbs__item"><a href="index.html">Главная</a></li>
           <li class="bread-crumbs__item"><a href="#">Каталог</a></li>
@@ -69,7 +102,7 @@
       <h1 class="main-caption">Сливочное мороженое</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form action="#">
+        <form action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Сортировка:</legend>
             <select name="sort" id="filter__sort">
@@ -218,11 +251,11 @@
       </div>
 
       <div class="sitelink">
-        <ul class="sitelink__items">
-          <li><a class="sitelink__link sitelink__link--attention" href="#"><span class="underline">Для поставщиков</span></a></li>
-          <li><a class="sitelink__link" href="#"><span class="underline">Наши документы</span></a></li>
-          <li><a class="sitelink__link" href="#"><span class="underline">О производстве</span></a></li>
-          <li><a class="sitelink__link" href="#"><span class="underline">Экологические стандарты</span></a></li>
+        <ul class="sitelink__items tmp">
+          <li><a class="sitelink__link sitelink__link--attention" href="#"><span class="underline tmp">Для поставщиков</span></a></li>
+          <li><a class="sitelink__link" href="#"><span class="underline tmp">Наши документы</span></a></li>
+          <li><a class="sitelink__link" href="#"><span class="underline tmp">О производстве</span></a></li>
+          <li><a class="sitelink__link" href="#"><span class="underline tmp">Экологические стандарты</span></a></li>
         </ul>
       </div>
 
