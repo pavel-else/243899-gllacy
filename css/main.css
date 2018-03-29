@@ -102,7 +102,7 @@ a:hover {
   display: inline-flex;
 
   margin: 0;
-  margin-top: 10px;
+  margin-top: 12px;
   padding: 0;
 
   list-style: none;
@@ -1113,7 +1113,7 @@ a:hover {
 .main-footer {
   display: flex;
 
-  padding-top: 20px;
+  padding-top: 18px;
 
   justify-content: space-between;
 }
@@ -1123,7 +1123,7 @@ a:hover {
 
   margin: 0;
   padding: 0;
-  padding-top: 15px;
+  padding-top: 17px;
 
   list-style: none;
 }
@@ -1141,7 +1141,8 @@ a:hover {
   height: 32px;
 
   border: 3px solid #c2cec7;
-  border-bottom: none;
+
+
   border-radius: 50%;
 }
 
@@ -1170,7 +1171,7 @@ a:hover {
   width: 310px;
   margin: 0;
   padding: 0;
-  padding-top: 13px;
+  padding-top: 15px;
   padding-left: 0;
 
   list-style: none;
@@ -1180,7 +1181,12 @@ a:hover {
 }
 
 .sitelink__items li {
-  flex-basis: 50%;
+  flex-basis: 45%;
+}
+.sitelink__items li:nth-child(2n) {
+  box-sizing: border-box;
+  flex-basis: 55%;
+  padding-left: 5px;
 }
 
 .sitelink__link {
@@ -1217,17 +1223,6 @@ a:hover {
   font-weight: bold;
 }
 
-.footer-logo {
-  display: block;
-
-  width: 108px;
-  height: 39px;
-  margin-bottom: 0;
-
-  background-image: url('../img/svg/logo-htmlacademy.svg');
-  background-repeat: no-repeat;
-}
-
 .footer-copyright {
   font-size: 12px;
   line-height: 18px;
@@ -1235,6 +1230,18 @@ a:hover {
   margin: 0;
   padding: 0;
 }
+
+.footer-logo {
+  display: block;
+  padding: 0;
+
+  width: 108px;
+  height: 39px;
+  margin-bottom: 2px;
+  background-image: url('../img/svg/logo-htmlacademy.svg');
+  background-repeat: no-repeat;
+}
+
 
 
 /*FEEDBACK*/
