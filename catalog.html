@@ -102,7 +102,7 @@
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter__form" action="https://echo.htmlacademy.ru">
-          <fieldset class="filter__item sort tmp">
+          <fieldset class="filter__item sort">
             <legend class="filter__caption">Сортировка:</legend>
             <select class="sort__input" name="sort" id="filter__sort">
               <option value="popular">По популярности</option>
@@ -113,25 +113,27 @@
           </fieldset>
           <fieldset class="filter__item range">
             <legend class="filter__caption">Цена: 100 руб. – 500 руб.</legend>
-            <div class="range__controls">
+            <div class="filter__canvas filter__canvas--range">
               <div class="range__scale">
                 <div class="range__bar"></div>
               </div>
             </div>
           </fieldset>
-          <fieldset class="filter__item fat tmp">
+          <fieldset class="filter__item fat">
             <legend class="filter__caption">Жирность</legend>
-            <label for="fat-0" class="filter__label">0%</label>
-            <input id="fat-0" class="filter__radio" type="radio" name="fat" value="0">
-            
-            <label for="fat-<10" class="filter__label">до 10%</label>
-            <input id="fat-<10" class="filter__radio" type="radio" name="fat" value="<10" checked>
-            
-            <label for="fat-<30" class="filter__label">до 30%</label>
-            <input id="fat-<30" class="filter__radio" type="radio" name="fat" value="<30">
-            
-            <label for="fat->30" class="filter__label">выше 30%</label>
-            <input id="fat->30" class="filter__radio" type="radio" name="fat" value=">30">                      
+            <div class="filter__canvas filter__canvas--fat">
+              <input id="fat-0" class="fat__radio" type="radio" name="fat" value="0">
+              <label for="fat-0" class="fat__label">0%</label>
+              
+              <input id="fat-<10" class="fat__radio" type="radio" name="fat" value="<10" checked>
+              <label for="fat-<10" class="fat__label">до 10%</label>
+              
+              <input id="fat-<30" class="fat__radio" type="radio" name="fat" value="<30">
+              <label for="fat-<30" class="fat__label">до 30%</label>
+              
+              <input id="fat->30" class="fat__radio" type="radio" name="fat" value=">30">
+              <label for="fat->30" class="fat__label">выше 30%</label>
+            </div>
           </fieldset>
 
           <fieldset class="filter__item filler tmp">
