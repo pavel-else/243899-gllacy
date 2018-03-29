@@ -584,6 +584,8 @@ a:hover {
 }
 
 .filter__item {
+  margin: 0;
+  margin-right: 10px;
   padding: 0;
 
   border: none;
@@ -627,9 +629,62 @@ a:hover {
   background-repeat: no-repeat;
 }
 
-
 .sort__input option {
   color: #323223;
+}
+
+/*RANGE*/
+.range {
+}
+
+.range__controls {
+  position: relative;
+  
+  height: 38px;
+  width: 220px;
+  box-sizing: border-box;
+  padding: 18px 25px 0;
+    
+  background-color: rgba(256, 256, 256, .2);
+  
+  border-radius: 18px;
+}
+
+.range__scale {
+  height: 4px;
+
+  background: #d7dcde;
+}
+
+.range__bar {
+  position: relative;
+  width: 70%;
+  margin-left: 10%;
+  height: 4px;
+
+  background-color: #ffffff;
+}
+
+
+.range__bar::after,
+.range__bar::before {
+  position: absolute;
+  top: -8px;
+  content: '';
+  
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range__bar::after {
+  right: 0;
 }
 
 /*SLIDER*/
