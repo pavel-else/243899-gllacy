@@ -29,10 +29,10 @@
 
         <ul class="user-nav">
           <li class="user-nav__item">
-            <button class="user-nav__button user-nav__button--search">Поиск</button>
-            <form class="user-nav__form--search" action="https://echo.htmlacademy.ru" method="post">
-              <label for="user-nav__search" class="visually-hidden">Поиск по сайту</label>
-              <input id="user-nav__search" class="user-nav__search" type="search" placeholder="Что ищем?">
+            <button class="user-nav__link user-nav__link--search">Поиск</button>
+            <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+              <label for="search__input" class="visually-hidden">Поиск по сайту</label>
+              <input id="search__input" class="search__input" type="search" placeholder="Что ищем?">
             </form>
           </li>
           <li class="user-nav__item login">
@@ -41,7 +41,7 @@
               Ссылка на страницу нужна на случай, если JS отработал не корректно
               !
             -->
-            <button class="user-nav__button user-nav__button--login">Вход</button>
+            <button class="user-nav__link user-nav__link--login">Вход</button>
             <form class="login__form" action="https://echo.htmlacademy.ru" method="post">
               <label for="login__email" class="visually-hidden">Электронная почта</label>
               <input id="login__email" class="login__input login__input--email" type="email" placeholder="Электронная почта">
@@ -58,7 +58,7 @@
             </form>
           </li>
           <li class="user-nav__item basket"><!--not-empty-->
-            <button class="user-nav__button user-nav__button--basket">Пусто</button>
+            <button class="user-nav__link user-nav__link--basket">Пусто</button>
             <div class="basket__form">
               <table class="basket__table">
                 <tr class="basket__row">

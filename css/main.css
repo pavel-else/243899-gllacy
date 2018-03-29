@@ -202,7 +202,7 @@ a:hover {
   display: flex;
 
   margin: 0;
-  margin-top: 15px;
+  margin-top: 13px;
   padding: 0;
 
   list-style: none;
@@ -214,16 +214,20 @@ a:hover {
 .user-nav__item {
   position: relative;
 
-  margin-left: 9px;
+  margin-left: 10px;
 }
 
-.user-nav__button {
+.user-nav__link {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+
   position: relative;
 
   display: block;
 
   min-width: 32px;
-  height: 32px;
+  padding: 8px;
 
   cursor: pointer;
 
@@ -233,10 +237,19 @@ a:hover {
   background-color: rgba(256, 256, 256, .5);
 }
 
-.user-nav__button--search {
-  font-size: 0;
+.user-nav__link:hover {
+  color: #fff;
 }
-.user-nav__button--search::after {
+
+/*SEARCH*/
+.user-nav__link--search {
+  font-size: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.user-nav__link--search::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -253,11 +266,11 @@ a:hover {
   background-position: 50% 50%;
 }
 
-.user-nav__form--search {
+.search__form {
+  /*form*/
   position: absolute;
   top: 37px;
   right: 0;
-  /*form*/
 
   display: none;
 
@@ -269,7 +282,7 @@ a:hover {
   background-color: #f8f7f4;
   box-shadow: 0 20px 30px rgba(0,0,0,.5);
 }
-.user-nav__search {
+.search__input {
   font-size: 14px;
   line-height: 24px;
 
@@ -279,19 +292,19 @@ a:hover {
   padding-left: 10px;
 }
 
-.user-nav__item:hover .user-nav__form--search {
+.user-nav__item:hover .search__form {
   display: block;
 }
 
-.user-nav__button--login {
-  padding-right: 15px;
-  padding-left: 42px;
+/*LOGIN*/
+.user-nav__link--login {
+  padding-right: 16px;
+  padding-left: 43px;
 }
-
-.user-nav__button--login::after {
+.user-nav__link--login::after {
   position: absolute;
   top: 0;
-  left: 11px;
+  left: 10px;
 
   display: block;
 
@@ -373,11 +386,12 @@ a:hover {
 }
 
 /*BASKET*/
-.user-nav__button--basket {
-  padding-right: 30px;
-  padding-left: 45px;
+
+.user-nav__link--basket {
+  padding-right: 34px;
+  padding-left: 44px;
 }
-.user-nav__button--basket::after {
+.user-nav__link--basket::after {
   position: absolute;
   top: 0;
   left: 10px;
@@ -401,7 +415,7 @@ a:hover {
 .basket__form {
   display: none;
 }
-.not-empty .user-nav__button--basket::after {
+.not-empty .user-nav__link--basket::after {
   background-image: url('../img/svg/basket-red.svg');
 }
 

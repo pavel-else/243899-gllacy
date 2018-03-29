@@ -28,21 +28,16 @@
         </div>
 
         <ul class="user-nav">
-          <li class="user-nav__item">
-            <button class="user-nav__button user-nav__button--search">Поиск</button>
-            <form class="user-nav__form--search" action="https://echo.htmlacademy.ru" method="post">
-              <label for="user-nav__search" class="visually-hidden">Поиск по сайту</label>
-              <input id="user-nav__search" class="user-nav__search" type="search" placeholder="Что ищем?">
+          <li class="user-nav__item search">
+            <a class="user-nav__link user-nav__link--search">Поиск</a>
+            <form class="search__form" action="/" method="post">
+              <label for="search__input" class="visually-hidden">Поиск по сайту</label>
+              <input id="search__input" class="search__input" type="search" placeholder="Что ищем?">
             </form>
           </li>
           <li class="user-nav__item login">
-            <!--
-              Необходимо перехватить переход по ссылке и вывести форму ввода логина.                                   
-              Ссылка на страницу нужна на случай, если JS отработал не корректно
-              !
-            -->
-            <button class="user-nav__button user-nav__button--login">Вход</button>
-            <form class="login__form" action="https://echo.htmlacademy.ru" method="post">
+            <a class="user-nav__link user-nav__link--login">Вход</a>
+            <form class="login__form" action="/" method="post">
               <label for="login__email" class="visually-hidden">Электронная почта</label>
               <input id="login__email" class="login__input login__input--email" type="email" placeholder="Электронная почта">
 
@@ -58,7 +53,7 @@
             </form>
           </li>
           <li class="user-nav__item basket"><!--not-empty-->
-            <button class="user-nav__button user-nav__button--basket">Пусто</button>
+            <a class="user-nav__link user-nav__link--basket">Пусто</a>
             <div class="basket__form">
               <table class="basket__table">
                 <tr class="basket__row">
@@ -205,7 +200,7 @@
           <div class="subscription__wrap">          
             <h2 class="visually-hidden">Подписка на рассылку</h2>
             <p class="subscription__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form class="subscription__form" action="https://echo.htmlacademy.ru">
+            <form class="subscription__form" action="/">
               <label for="subscription__form--email" class="visually-hidden">Электронная почта</label>
               <input id="subscription__form--email" class="subscription__form--email" type="email" placeholder="Электронная почта">
               <button class="button" type="submit">Отправить</button>
@@ -259,7 +254,7 @@
     <section class="feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p class="feedback__caption">Мы обязательно вам ответим!</p>
-      <form class="feedback__form" action="https://echo.htmlacademy.ru">
+      <form class="feedback__form" action="/">
         <label for="feedback__name" class="feedback__label feedback__label--name visually-hidden">Как вас зовут?</label>
         <input type="text" name="feedback__name" class="feedback__input feedback__input--name" id="feedback__name" placeholder="Как вас зовут?">
 
