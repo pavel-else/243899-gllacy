@@ -84,10 +84,10 @@
       </nav>
 
       <div class="header-bottom-wrapper">
-        <ul class="bread-crumbs">
-          <li class="bread-crumbs__item"><a href="index.html">Главная</a></li>
-          <li class="bread-crumbs__item"><a href="#">Каталог</a></li>
-          <li class="bread-crumbs__item"><a href="#">Сливочное</a></li>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
+          <li class="breadcrumbs__item"><a href="#">Сливочное</a></li>
         </ul>
         <p class="contact-info">
           С 10 до 20, ежедневно<br>
@@ -101,10 +101,10 @@
       <h1 class="main-caption">Сливочное мороженое</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Сортировка:</legend>
-            <select name="sort" id="filter__sort">
+        <form class="filter__form" action="https://echo.htmlacademy.ru">
+          <fieldset class="filter__item sort tmp">
+            <legend class="filter__caption">Сортировка:</legend>
+            <select class="sort__input" name="sort" id="filter__sort">
               <option value="popular">По популярности</option>
               <option value="inexpensive">Сначала недорогие</option>
               <option value="expensive">Сначала дорогие</option>
@@ -114,8 +114,8 @@
           <!--range-toggle 
             <legend>Цена: 100 руб. – 500 руб.</legend>
           -->
-          <fieldset class="filter__fat">
-            <legend>Жирность</legend>
+          <fieldset class="filter__item fat tmp">
+            <legend class="filter__caption">Жирность</legend>
             <label for="fat-0" class="filter__label">0%</label>
             <input id="fat-0" class="filter__radio" type="radio" name="fat" value="0">
             
@@ -129,8 +129,8 @@
             <input id="fat->30" class="filter__radio" type="radio" name="fat" value=">30">                      
           </fieldset>
 
-          <fieldset class="filter__filler">
-            <legend>Наполнители:</legend>
+          <fieldset class="filter__item filler tmp">
+            <legend class="filter__caption">Наполнители:</legend>
             
             <label for="filter__chocolate" class="filter__label">шоколадные</label>
             <input id="filter__chocolate" class="filter__checkbox" name="filter__chocolate" type="checkbox" checked>
