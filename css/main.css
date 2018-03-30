@@ -882,6 +882,30 @@ a:hover {
   display: none;
 }
 
+.slider__r-buttons {
+  position: absolute;
+  top: 500px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.slider__r-button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.slider__r-button--active {
+  background-color: #fff;
+}
+
 /*DISCOUNT*/
 .discount-list {
   display: flex;
