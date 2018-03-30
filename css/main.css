@@ -551,6 +551,7 @@ a:hover {
   border: none;
 }
 
+/*BREADCRUMBS*/
 .breadcrumbs {
   display: flex;
 
@@ -561,6 +562,13 @@ a:hover {
   list-style: none;
 
   order: 2;
+}
+.breadcrumbs__item::after {
+  content: '»';
+  padding-left: 5px;
+}
+.breadcrumbs__item:last-child::after {
+  display: none;
 }
 
 .page--main .breadcrumbs {
