@@ -1,6 +1,6 @@
 @charset 'UTF-8';
 
-.tmp {
+. {
   outline: 1px solid lightgray;
 }
 
@@ -95,8 +95,8 @@ a:hover {
 }
 
 .main-header {
-  margin-top: 10px;
-  padding-bottom: 10px;
+  margin-top: 9px;
+  padding-bottom: 2px;
 }
 
 /*NAVIGATION*/
@@ -122,7 +122,7 @@ a:hover {
   display: inline-flex;
 
   margin: 0;
-  margin-top: 12px;
+  margin-top: 14px;
   padding: 0;
 
   list-style: none;
@@ -222,7 +222,7 @@ a:hover {
   display: flex;
 
   margin: 0;
-  margin-top: 13px;
+  margin-top: 14px;
   padding: 0;
 
   list-style: none;
@@ -234,7 +234,7 @@ a:hover {
 .user-nav__item {
   position: relative;
 
-  margin-left: 10px;
+  margin-left: 9px;
 }
 
 .user-nav__link {
@@ -322,6 +322,7 @@ a:hover {
 .user-nav__link--login {
   padding-right: 16px;
   padding-left: 43px;
+  margin-left: 1px;
 }
 .user-nav__link--login::after {
   position: absolute;
@@ -409,10 +410,9 @@ a:hover {
 }
 
 /*BASKET*/
-
 .user-nav__link--basket {
   padding-right: 34px;
-  padding-left: 44px;
+  padding-left: 45px;
 }
 .user-nav__link--basket::after {
   position: absolute;
@@ -557,7 +557,8 @@ a:hover {
 
   display: inline-block;
 
-  padding-top: 5px;
+  padding-top: 4px;
+  margin-right: -1px;
 
   border: none;
 }
@@ -576,7 +577,7 @@ a:hover {
   display: flex;
 
   margin: 0;
-  margin-top: 20px;
+  margin-top: 0px;
   padding: 0;
 
   list-style: none;
@@ -585,7 +586,7 @@ a:hover {
 }
 .breadcrumbs__item::after {
   content: '»';
-  padding-left: 5px;
+  padding-left: 8px;
 }
 .breadcrumbs__item:last-child::after {
   display: none;
@@ -599,9 +600,18 @@ a:hover {
   margin-right: 5px;
 }
 
-.main-caption {
+.breadcrumbs__link {
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.main__caption {
   margin: 0;
-  margin-bottom: 35px;
+  padding: 0;
+  margin-bottom: 25px;
+  line-height: 41px;
+  font-size: 35px;
+  font-weight: bold;
 }
 
 /* FILTER*/
@@ -617,7 +627,7 @@ a:hover {
 
 .filter__item {
   margin: 0;
-  margin-right: 10px;
+  margin-right: 16px;
   padding: 0;
 
   border: none;
@@ -629,7 +639,7 @@ a:hover {
   line-height: 16px;
 
   margin-bottom: 6px;
-  padding-left: 14px;
+  padding-left: 16px;
 }
 
 .filter__canvas {
@@ -645,15 +655,15 @@ a:hover {
 }
 
 .sort__input {
-  font-size: 16px;
+/*  font-size: 16px;
   line-height: 18px;
-
-  padding: 7px 31px 8px 12px;
+*/
+  padding: 6px 32px 8px 15px;
 
   text-transform: lowercase;
 
   color: #fff;
-  border-radius: 15px;
+  /*border-radius: 15px;*/
   background-color: rgba(256, 256, 256, .2);
   box-shadow: none;
   border: none;
@@ -682,7 +692,7 @@ a:hover {
 /*RANGE*/
 .filter__canvas--range {
   width: 220px;
-  padding: 18px 25px 0;
+  padding: 17px 23px 0;
 }
 
 .range__scale {
@@ -693,8 +703,8 @@ a:hover {
 
 .range__bar {
   position: relative;
-  width: 70%;
-  margin-left: 10%;
+  width: 68%;
+  margin-left: 12px;
   height: 4px;
 
   background-color: #ffffff;
@@ -712,7 +722,7 @@ a:hover {
 
   border: 8px solid #ffffff;
   background-color: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+/*  box-shadow: 0 2px 1px 0 #cfcfcf;*/
   border-radius: 50%;
   cursor: pointer;
 }
@@ -723,19 +733,27 @@ a:hover {
 
 /*FAT*/
 .filter__canvas--fat {
-  padding-top: 8px;
+  padding-top: 9px;
+  padding-left: 11px;
+  padding-right: 4px;
+  margin-left: -1px;
+}
+.filter__caption--fat {
+  margin-left: -2px;
 }
 
 .fat__label {
   position: relative;
-  margin-right: 10px;
-  padding-left: 30px;
+  margin-right: 11px;
+  padding-left: 35px;
+  line-height: 18px;
+  font-size: 16px;
 }
 
 .fat__label::before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -2px;
+  left: 2px;
   content: '';
   display: block;
   width: 14px;
@@ -745,8 +763,8 @@ a:hover {
 }
 .fat__label::after {
   position: absolute;
-  top: 7px;
-  left: 7px;
+  top: 5px;
+  left: 9px;
   content: '';
   display: none;
   width: 8px;
@@ -764,13 +782,21 @@ a:hover {
 }
 
 /*FILLER*/
+.filler {
+  margin-top: 14px;
+  margin-bottom: 5px;
+}
 .filter__canvas--filler {
   padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 4px;
 }
 .filler__label {
   position: relative;
-  margin-right: 20px;
-  padding-left: 30px;
+  margin-right: 18px;
+  padding-left: 32px;
+  line-height: 18px;
+  font-size: 16px;
 }
 .filler__label::before {
   content: '';
@@ -780,7 +806,7 @@ a:hover {
   left: 0;
   width: 16px;
   height: 16px;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   border-radius: 3px;
 }
 
@@ -788,12 +814,12 @@ a:hover {
   content: '';
   display: none;
   position: absolute;
-  top: 0;
-  left: 5px;
-  width: 14px;
+  top: 1px;
+  left: 4px;
+  width: 15px;
   height: 7px;
-  border-bottom: 5px solid #fff;
-  border-left: 5px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-left: 3px solid #fff;
   transform: rotate(-45deg);
 }
 
@@ -809,12 +835,14 @@ a:hover {
   background-color: rgba(256, 256, 256, .2);
   box-sizing: border-box;
   border: 3px solid #fff;
-  padding: 0px 20px;
+  padding: 0px 27px;
   color: #fff;
   line-height: 18px;
   display: block;
   height: 38px;
   border-radius: 19px;
+  margin-left: -2px;
+  margin-bottom: 5px;
 }
 .filter__button:hover {
   background-color: #fff;
@@ -824,7 +852,6 @@ a:hover {
 
 /*SLIDER*/
 .slider__pages {
-  /*position: relative;*/
   margin: 0;
   padding: 0;
 
@@ -835,7 +862,7 @@ a:hover {
   display: flex;
   flex-direction: column;
 
-  padding-top: 265px;
+  padding-top: 273px;
 
   align-items: center;
 }
@@ -871,7 +898,7 @@ a:hover {
 
   display: block;
 
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   padding: 10px 40px;
 
   border-radius: 32px;
@@ -884,7 +911,7 @@ a:hover {
 
 .slider__r-buttons {
   position: absolute;
-  top: 500px;
+  top: 563px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -894,8 +921,8 @@ a:hover {
   padding: 0;
   margin: 0;
   border: 0;
-  width: 19px;
-  height: 19px;
+  width: 20px;
+  height: 20px;
   border: 1px solid #fff;
   background-color: transparent;
   border-radius: 50%;
@@ -911,6 +938,7 @@ a:hover {
   display: flex;
 
   justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .discount {
@@ -977,16 +1005,21 @@ a:hover {
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 22px;
-  padding-top: 35px;
+  margin-bottom: 32px;
+  padding-top: 34px;
   padding-right: 0;
   padding-left: 0;
+}
+
+.page--main .product {
+  margin-bottom: 23px;
 }
 
 .product__items {
   display: flex;
 
   margin: 0;
+  margin-bottom: 43px;
   padding: 0;
 
   list-style: none;
@@ -995,6 +1028,9 @@ a:hover {
   flex-wrap: wrap;
 }
 
+.page--main .product__items {
+  margin-bottom: 0;
+}
 .product__item {
   position: relative;
 
@@ -1003,9 +1039,11 @@ a:hover {
 
   margin: 0;
   padding: 0;
-  padding-top: 5px;
-
   flex-basis: 267px;
+}
+
+.page--catalog .product__item {
+  margin-bottom: 22px;
 }
 
 .product__image {
@@ -1055,7 +1093,7 @@ a:hover {
 
   width: 30px;
   height: 35px;
-  margin: 3px 3px 0;
+  margin: 2px 1px 0 4px;
 
   background-image: url('../img/svg/ruble.svg');
   background-repeat: no-repeat;
@@ -1127,31 +1165,27 @@ a:hover {
   margin-bottom: 22px;
 }
 
-.pager__items {
-  display: flex;
-
-  margin: 0;
-  margin-left: auto;
-  padding: 0;
-
-  list-style: none;
-}
-
-
 /*PAGER*/
 .pager__items {
   display: flex;
   position: relative;
-  padding: 0 20px;
+
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  padding: 0 24px;
+
+  list-style: none;
 }
 
 .pager__items::before,
 .pager__items::after {
+  display: block;
   content: '';
   position: absolute;
-  top: 10px;
-  height: 12px;
-  width: 12px;
+  top: 9px;
+  height: 8px;
+  width: 8px;
   border-bottom: 1px solid #fff;
   border-left: 1px solid #fff;
   cursor: pointer;
@@ -1159,19 +1193,23 @@ a:hover {
 
 .pager__items::before {
   transform: rotate(45deg);
-  left: 0;
+  left: 4px;
+  border-color: rgba(256, 256, 256, 0.5);
 }
 .pager__items::after {
   transform: rotate(225deg);
-  right: 0;
+  right: 3px;
 }
 
 .pager__link {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   box-sizing: border-box;
-  padding: 6px 0 0 10px;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 4px;
+  padding: 2px 0 0 0px;
 }
 .pager__link--active {
   background-color: #fff;
@@ -1484,7 +1522,7 @@ a:hover {
   width: 310px;
   margin: 0;
   padding: 0;
-  padding-top: 15px;
+  padding-top: 13px;
   padding-left: 0;
 
   list-style: none;
@@ -1537,6 +1575,20 @@ a:hover {
   font-weight: bold;
 }
 
+.main-footer {
+  position: relative;
+  margin-bottom: 50px;
+}
+.main-footer::before {
+  top: -1px;
+  position: absolute;
+  content: '';
+  display: block;
+  background-color: rgba(256, 256, 256, 0.3);
+  height: 1px;
+  width: 1144px;
+}
+
 .footer-copyright {
   font-size: 12px;
   line-height: 18px;
@@ -1551,6 +1603,7 @@ a:hover {
   width: 108px;
   height: 39px;
   margin-bottom: 2px;
+  margin-left: 2px;
   padding: 0;
 
   background-image: url('../img/svg/logo-htmlacademy.svg');

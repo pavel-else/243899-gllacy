@@ -8,7 +8,7 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body class="page page--catalog">
-    <header class="main-header container">
+    <header class="main-header container ">
       <nav class="navigation">
         <div class="navigation__wrapper">
           <img class="main-header-logo" src="img/svg/logo.svg" width="154" height="64" alt="Gllacy Shop - логотип онлайн-магазина мороженого">
@@ -80,9 +80,9 @@
 
       <div class="header-bottom-wrapper">
         <ul class="breadcrumbs">
-          <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-          <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
-          <li class="breadcrumbs__item"><a href="#">Сливочное</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Сливочное</a></li>
         </ul>
         <p class="contact-info">
           С 10 до 20, ежедневно<br>
@@ -92,14 +92,14 @@
     </header>
 
     <main>
-    <div class="main__wrap container">        
-      <h1 class="main-caption">Сливочное мороженое</h1>
+    <div class="  main__wrap container">        
+      <h1 class="main__caption">Сливочное мороженое</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter__form" action="https://echo.htmlacademy.ru">
           <fieldset class="filter__item sort">
             <legend class="filter__caption">Сортировка:</legend>
-            <select class="sort__input" name="sort" id="filter__sort">
+            <select class="sort__input filter__canvas" name="sort" id="filter__sort">
               <option value="popular">По популярности</option>
               <option value="inexpensive">Сначала недорогие</option>
               <option value="expensive">Сначала дорогие</option>
@@ -115,7 +115,7 @@
             </div>
           </fieldset>
           <fieldset class="filter__item fat">
-            <legend class="filter__caption">Жирность</legend>
+            <legend class="filter__caption filter__caption--fat">Жирность:</legend>
             <div class="filter__canvas filter__canvas--fat">
               <input id="fat-0" class="fat__radio" type="radio" name="fat" value="0">
               <label for="fat-0" class="fat__label">0%</label>
@@ -131,7 +131,7 @@
             </div>
           </fieldset>
           <fieldset class="filter__item filler">
-            <legend class="filter__caption">Наполнители:</legend>
+            <legend class="filter__caption filter__caption--filler">Наполнители:</legend>
             <div class="filter__canvas filter__canvas--filler">
               <input id="filler__chocolate" class="filler__checkbox" name="filler__chocolate" type="checkbox" checked>
               <label for="filler__chocolate" class="filler__label">шоколадные</label>
@@ -232,7 +232,7 @@
           <li class="product__item">
             <img class="product__image" src="img/ice-8.jpg" width="267" height="267" alt="Сливочное с менетоловым сиропом">
             <p class="product__price">435 <span class="product__ruble">Р</span><span class="product__weight">/кг</span></p>
-            <a href="#" class="product__description"><span class="underline">Сливочное с менетоловым сиропом</span></a>
+            <a href="#" class="product__description"><span class="underline">Сливочное с ментоловым сиропом</span></a>
             <div class="product__annexe">
               <button class="button product__button">Быстрый просмотр</button>
             </div>

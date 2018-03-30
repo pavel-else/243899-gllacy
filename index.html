@@ -8,7 +8,7 @@
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body class="page page--main">
-    <header class="main-header container">
+    <header class="main-header container ">
       <nav class="navigation">
         <div class="navigation__wrapper">
           <img class="main-header-logo" src="img/svg/logo.svg" width="154" height="64" alt="Gllacy Shop - логотип онлайн-магазина мороженого">
@@ -29,14 +29,14 @@
 
         <ul class="user-nav">
           <li class="user-nav__item search">
-            <a href="#" class="user-nav__link user-nav__link--search">Поиск</a>
+            <a class="user-nav__link user-nav__link--search">Поиск</a>
             <form class="search__form" action="/" method="post">
               <label for="search__input" class="visually-hidden">Поиск по сайту</label>
               <input id="search__input" class="search__input" type="search" placeholder="Что ищем?">
             </form>
           </li>
           <li class="user-nav__item login">
-            <a href="#" class="user-nav__link user-nav__link--login">Вход</a>
+            <a class="user-nav__link user-nav__link--login">Вход</a>
             <form class="login__form" action="/" method="post">
               <label for="login__email" class="visually-hidden">Электронная почта</label>
               <input id="login__email" class="login__input login__input--email" type="email" placeholder="Электронная почта">
@@ -53,7 +53,7 @@
             </form>
           </li>
           <li class="user-nav__item basket"><!--not-empty-->
-            <a href="#" class="user-nav__link user-nav__link--basket">Пусто</a>
+            <a class="user-nav__link user-nav__link--basket">Пусто</a>
             <div class="basket__form">
               <table class="basket__table">
                 <tr class="basket__row">
@@ -80,9 +80,9 @@
 
       <div class="header-bottom-wrapper">
         <ul class="breadcrumbs">
-          <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-          <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
-          <li class="breadcrumbs__item"><a href="#">Сливочное</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Сливочное</a></li>
         </ul>
         <p class="contact-info">
           С 10 до 20, ежедневно<br>
