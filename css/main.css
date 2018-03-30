@@ -729,6 +729,49 @@ a:hover {
   display: none;
 }
 
+/*FILLER*/
+.filter__canvas--filler {
+  padding-top: 8px;
+}
+.filler__label {
+  position: relative;
+  margin-right: 20px;
+  padding-left: 30px;
+}
+.filler__label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #fff;
+  border-radius: 3px;
+}
+
+.filler__label::after {
+  content: '';
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  width: 14px;
+  height: 7px;
+  border-bottom: 5px solid #fff;
+  border-left: 5px solid #fff;
+  transform: rotate(-45deg);
+}
+
+.filler__checkbox {
+  display: none;
+}
+
+.filler__checkbox:checked + .filler__label::after {
+  display: block;
+}
+
+
 /*SLIDER*/
 .slider__pages {
   /*position: relative;*/
