@@ -72,6 +72,26 @@ a:hover {
   border: 0;
   border-radius: 26px;
   background-color: #e9563a;
+  background-image: linear-gradient(#E74A35, #F26843);
+  text-shadow: 0px 2px 5px #a0200b;
+  box-shadow: 0px 2px 2px 0px rgba(7, 6, 0, 0.36);
+}
+
+.button:hover {
+  color: white;
+  background-color: inherit;
+  background-image: -webkit-linear-gradient(#f58669, #ec6f5e);
+  background-image: linear-gradient(#f58669, #ec6f5e);
+
+  box-shadow: 0px 1px 2px 0px #ac1000;
+}
+.button:focus {
+  color: white;
+  background-color: inherit;
+  background-image: -webkit-linear-gradient(#f58669, #ec6f5e);
+  background-image: linear-gradient(#f58669, #ec6f5e);
+
+  box-shadow: 0px 1px 2px 0px #ac1000;
 }
 
 .main-header {
