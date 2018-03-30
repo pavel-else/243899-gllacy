@@ -796,6 +796,10 @@ a:hover {
   height: 38px;
   border-radius: 19px;
 }
+.filter__button:hover {
+  background-color: #fff;
+  color: #323232;
+}
 
 
 /*SLIDER*/

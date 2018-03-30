@@ -14,9 +14,9 @@
           <img class="main-header-logo" src="img/svg/logo.svg" width="154" height="64" alt="Gllacy Shop - логотип онлайн-магазина мороженого">
           <ul class="navigation__items">
             <li class="navigation__item">
-              <a class="navigation__item--link" href="catalog.html"><span class="underline">Каталог</span></a>
+              <a class="navigation__item--link" href="#"><span class="underline">Каталог</span></a>
               <ul class="sub-navigation__items">
-                <li class="sub-navigation__item"><a class="sub-navigation__link" href="#">Сливочное</a></li>
+                <li class="sub-navigation__item"><a class="sub-navigation__link" href="catalog.html">Сливочное</a></li>
                 <li class="sub-navigation__item"><a class="sub-navigation__link" href="#">Щербеты</a></li>
                 <li class="sub-navigation__item"><a class="sub-navigation__link" href="#">Фруктовый лед</a></li>
                 <li class="sub-navigation__item"><a class="sub-navigation__link" href="#">Мелорин</a></li>
@@ -28,21 +28,16 @@
         </div>
 
         <ul class="user-nav">
-          <li class="user-nav__item">
-            <button class="user-nav__link user-nav__link--search">Поиск</button>
-            <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+          <li class="user-nav__item search">
+            <a class="user-nav__link user-nav__link--search">Поиск</a>
+            <form class="search__form" action="/" method="post">
               <label for="search__input" class="visually-hidden">Поиск по сайту</label>
               <input id="search__input" class="search__input" type="search" placeholder="Что ищем?">
             </form>
           </li>
           <li class="user-nav__item login">
-            <!--
-              Необходимо перехватить переход по ссылке и вывести форму ввода логина.                                   
-              Ссылка на страницу нужна на случай, если JS отработал не корректно
-              !
-            -->
-            <button class="user-nav__link user-nav__link--login">Вход</button>
-            <form class="login__form" action="https://echo.htmlacademy.ru" method="post">
+            <a class="user-nav__link user-nav__link--login">Вход</a>
+            <form class="login__form" action="/" method="post">
               <label for="login__email" class="visually-hidden">Электронная почта</label>
               <input id="login__email" class="login__input login__input--email" type="email" placeholder="Электронная почта">
 
@@ -58,7 +53,7 @@
             </form>
           </li>
           <li class="user-nav__item basket"><!--not-empty-->
-            <button class="user-nav__link user-nav__link--basket">Пусто</button>
+            <a class="user-nav__link user-nav__link--basket">Пусто</a>
             <div class="basket__form">
               <table class="basket__table">
                 <tr class="basket__row">
@@ -85,7 +80,7 @@
 
       <div class="header-bottom-wrapper">
         <ul class="breadcrumbs">
-          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
           <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
           <li class="breadcrumbs__item"><a href="#">Сливочное</a></li>
         </ul>
@@ -203,7 +198,7 @@
             </div>
           </li>
           <li class="product__item">
-            <img class="product__image" src="img/ice-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+            <img class="product__image" src="img/ice-7.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
             <p class="product__price">410 <span class="product__ruble">Р</span><span class="product__weight">/кг</span></p>
             <a href="#" class="product__description"><span class="underline">Сливочно-черничное с цельными ягодами черники</span></a>
             <div class="product__annexe">
@@ -211,7 +206,7 @@
             </div>
           </li>
           <li class="product__item">
-            <img class="product__image" src="img/ice-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+            <img class="product__image" src="img/ice-9.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
             <p class="product__price">375 <span class="product__ruble">Р</span><span class="product__weight">/кг</span></p>
             <a href="#" class="product__description"><span class="underline">Сливочно-лимонное с карамельной присыпкой</span></a>
             <div class="product__annexe">
@@ -219,7 +214,7 @@
             </div>
           </li>
           <li class="product__item">
-            <img class="product__image" src="img/ice-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+            <img class="product__image" src="img/ice-11.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
             <p class="product__price">320 <span class="product__ruble">Р</span><span class="product__weight">/кг</span></p>
             <a href="#" class="product__description"><span class="underline">Сливочное с шоколадной стружкой</span></a>
             <div class="product__annexe">
@@ -227,7 +222,7 @@
             </div>
           </li>
           <li class="product__item">
-            <img class="product__image" src="img/ice-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+            <img class="product__image" src="img/ice-6.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
             <p class="product__price">440 <span class="product__ruble">Р</span><span class="product__weight">/кг</span></p>
             <a href="#" class="product__description"><span class="underline">Сливочно-ванильное с кусочками шоколада</span></a>
             <div class="product__annexe">
@@ -235,7 +230,7 @@
             </div>
           </li>
           <li class="product__item">
-            <img class="product__image" src="img/ice-10.jpg" width="267" height="267" alt="Сливочное с менетоловым сиропом">
+            <img class="product__image" src="img/ice-8.jpg" width="267" height="267" alt="Сливочное с менетоловым сиропом">
             <p class="product__price">435 <span class="product__ruble">Р</span><span class="product__weight">/кг</span></p>
             <a href="#" class="product__description"><span class="underline">Сливочное с менетоловым сиропом</span></a>
             <div class="product__annexe">
@@ -243,7 +238,7 @@
             </div>
           </li>
           <li class="product__item">
-            <img class="product__image" src="img/ice-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+            <img class="product__image" src="img/ice-10.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
             <p class="product__price">355 <span class="product__ruble">Р</span><span class="product__weight">/кг</span></p>
             <a href="#" class="product__description"><span class="underline">Сливочное с кусочками черного шоколада</span></a>
             <div class="product__annexe">
@@ -293,6 +288,6 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-logo"></a>
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
       </p>
-    </footer>  
+    </footer> 
   </body>
 </html>
