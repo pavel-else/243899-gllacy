@@ -140,7 +140,7 @@ a:hover {
   border: none;
 }
 .navigation__item--link:hover,
-.navigation__item:hover  .navigation__item--link {
+.navigation__item:hover .navigation__item--link {
   color: #323232;
   border: none;
   border-radius: 30px;
@@ -149,11 +149,19 @@ a:hover {
 .navigation__item--link span:hover {
   border-bottom: none;
 }
+.navigation__item--link.active {
+  border: none;
+  border-radius: 30px;
+  background-color: #d07058;
+}
+
+
 
 .navigation__item:hover .sub-navigation__items {
   display: block;
 }
 
+/*SUB*/
 .sub-navigation__items {
   position: absolute;
   left: -6px;
@@ -161,7 +169,7 @@ a:hover {
   display: none;
 
   box-sizing: border-box;
-  width: 143px;
+  min-width: 143px;
   margin: 0;
   margin-top: 5px;
   padding: 5px 0 8px;
@@ -199,9 +207,10 @@ a:hover {
   color: #323232;
   background-color: #fbded7;
 }
-.sub-navigation__link:active {
-  color: #323232;
-  background-color: #f6b5a5;
+
+.sub-navigation__link.active {
+
+  background-color: #d07058;
 }
 
 /*USER-NAV*/
@@ -228,7 +237,7 @@ a:hover {
 
 .user-nav__link {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 16px;
 
   position: relative;
@@ -427,12 +436,17 @@ a:hover {
 .basket__form {
   display: none;
 }
+
+.not-empty .user-nav__link--basket {
+  padding-right: 12px;
+}
 .not-empty .user-nav__link--basket::after {
   background-image: url('../img/svg/basket-red.svg');
 }
 
 
 .not-empty .basket__form {
+  z-index: 4;
   position: absolute;
   top: 36px;
   right: 0;
@@ -490,18 +504,14 @@ a:hover {
 }
 
 .basket__equally {
-  padding-top: 8px;
-  padding-right: 15px;
-  padding-left: 26px;
+  padding: 8px 15px 0 26px;
 }
 
 .basket__total {
   font-size: 15px;
   line-height: 18px;
 
-  margin: 0;
-  margin-bottom: 14px;
-  margin-left: auto;
+  margin: 0 0 14px auto;
   padding: 0;
   padding-top: 15px;
 
@@ -644,15 +654,11 @@ a:hover {
 }
 
 .sort__input {
-/*  font-size: 16px;
-  line-height: 18px;
-*/
   padding: 6px 32px 8px 15px;
 
   text-transform: lowercase;
 
   color: #fff;
-  /*border-radius: 15px;*/
   background-color: rgba(256, 256, 256, .2);
   box-shadow: none;
   border: none;
@@ -848,12 +854,16 @@ a:hover {
 }
 
 .slider__page {
-  display: flex;
+  display: none;
   flex-direction: column;
 
   padding-top: 273px;
 
   align-items: center;
+}
+
+.slider__page.active {
+  display: flex;
 }
 
 .slider__image {
@@ -932,14 +942,26 @@ a:hover {
 
 .discount {
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
 
-  padding: 16px 18px;
+  padding: 16px 20px 16px 18px;
 
   border-radius: 16px;
-  background-size: 100% auto;
+  background-size: auto;
+  background-position: 0;
 
-  flex-basis: 524px;
+  flex-basis: 560px;
+}
+
+.discount--raspberries {
+  background-color: #a82c3e;
+  background-image: url('../img/raspberry-bg.jpg');
+}
+
+.discount--chocolate {
+  background-color: #5a3a30;
+  background-image: url('../img/chocolate-bg.jpg');
 }
 
 .discount__caption {
@@ -962,32 +984,13 @@ a:hover {
 }
 
 .discount__button {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 24px;
-
   display: block;
-
-  margin-right: 3px;
+  align-self: flex-end;
   margin-bottom: 8px;
-  margin-left: auto;
-  padding-right: 22px;
-  padding-bottom: 10px;
-  padding-left: 22px;
+  
+  padding: 10px 22px;
 }
 
-.discount--raspberries {
-  background-color: #a82c3e;
-  /*Заменить фоновые изображения - импортировать без закруглений*/
-  background-image: url('../img/raspberry-bg.jpg');
-  background-size: cover;
-}
-
-.discount--chocolate {
-  background-color: #5a3a30;
-  background-image: url('../img/chocolate-bg.jpg');
-  background-size: cover;
-}
 
 /* PRODUCT*/
 .product {
@@ -995,20 +998,18 @@ a:hover {
   flex-direction: column;
 
   margin-bottom: 32px;
-  padding-top: 34px;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 34px 0 0;
 }
 
 .page--main .product {
-  margin-bottom: 23px;
+  margin-bottom: 0px;
 }
 
 .product__items {
   display: flex;
 
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 44px;
   padding: 0;
 
   list-style: none;
@@ -1018,7 +1019,7 @@ a:hover {
 }
 
 .page--main .product__items {
-  margin-bottom: 0;
+  margin-bottom: 1px;
 }
 .product__item {
   position: relative;
@@ -1031,8 +1032,26 @@ a:hover {
   flex-basis: 267px;
 }
 
+.product__item:hover::after {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: -8px;
+
+  display: block;
+
+  width: 280px;
+  height: 100%;
+
+  content: '';
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: rgba(256, 256, 256, .2);
+}
+
 .page--catalog .product__item {
-  margin-bottom: 22px;
+  margin-bottom: 0px;
 }
 
 .product__image {
@@ -1044,7 +1063,7 @@ a:hover {
   align-self: center;
 }
 
-.hit::before {
+.product__item--hit::before {
   position: absolute;
 
   display: block;
@@ -1067,10 +1086,8 @@ a:hover {
 
   display: inline-flex;
 
-  margin: 0;
-  margin-top: -63px;
-  margin-bottom: 22px;
-  margin-left: 0;
+  margin: -63px 0 21px;
+  padding: 0;
 
   align-self: flex-start;
   align-items: center;
@@ -1094,10 +1111,18 @@ a:hover {
   font-weight: bold;
   line-height: 22px;
 
-  margin-bottom: 14px;
-  padding: 0 5px 1px 5px;
+  padding: 0 4px 1px 5px;
+}
 
+.product__item h3 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 38px;
+  margin-left:2px;
   text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
 }
 
 .product__weight {
@@ -1111,33 +1136,16 @@ a:hover {
   vertical-align: bottom;
 }
 
-.product__item:hover::after {
-  position: absolute;
-  z-index: -2;
-  top: 0;
-  left: -8px;
-
-  display: block;
-
-  width: 280px;
-  height: 100%;
-
-  content: '';
-
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  background-color: rgba(256, 256, 256, .2);
-}
 
 .product__annexe {
   position: absolute;
-  bottom: -66px;
+  bottom: -44px;
   left: -8px;
 
   display: none;
 
   width: 280px;
-  height: 66px;
+  height: 44px;
 
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -1150,8 +1158,7 @@ a:hover {
 .product__button {
   display: block;
 
-  margin: 0 auto;
-  margin-bottom: 22px;
+  margin: -22px auto 0;
 }
 
 /*PAGER*/
@@ -1327,6 +1334,9 @@ a:hover {
 
   color: #323232;
 }
+.new-in-blog__link span {
+  background-color: rgba(256, 256, 256, 0.8);
+}
 
 
 .subscription {
@@ -1426,6 +1436,11 @@ a:hover {
   padding: 0;
 
   color: #323232;
+}
+
+.map__middle-text {
+  margin: 0;
+  padding: 0; 
 }
 
 .map__tel {
