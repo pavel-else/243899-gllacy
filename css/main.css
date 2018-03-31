@@ -164,7 +164,7 @@ a:hover {
   width: 143px;
   margin: 0;
   margin-top: 5px;
-  padding: 5px 0 0;
+  padding: 5px 0 8px;
 
   list-style: none;
 
@@ -174,15 +174,11 @@ a:hover {
   box-shadow: 0 20px 30px rgba(0,0,0,.5);
 }
 
-.sub-navigation__items::before {
+.sub-navigation__item--caption {
   font-size: 14px;
   line-height: 16px;
-
-  display: block;
-
-  padding: 5px 19px 13px;
-
-  content: 'Новинки';
+  margin: 0 10px 0 5px;
+  padding: 7px 0 10px 15px;
 
   border-bottom: 1px solid #d1d0ce;;
 }
@@ -193,17 +189,10 @@ a:hover {
   line-height: 16px;
 
   display: block;
-  /*  text-decoration: underline;*/
-
-  padding: 10px 19px 5px;
+  margin: 3px 0 0 0;
+  padding: 6px 19px;
 
   color: #323232;
-}
-
-.sub-navigation__item:last-child > a {
-  padding-bottom: 12px;
-
-  border-radius: 5px;
 }
 
 .sub-navigation__link:hover {
