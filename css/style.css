@@ -74,7 +74,7 @@ a:hover {
   background-image: linear-gradient(#E74A35, #F26843);
   text-shadow: 0px 2px 5px #a0200b;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(7, 6, 0, 0.36);
-          box-shadow: 0px 2px 2px 0px rgba(7, 6, 0, 0.36);
+  box-shadow: 0px 2px 2px 0px rgba(7, 6, 0, 0.36);
 }
 
 .button:hover {
@@ -1188,14 +1188,15 @@ a:hover {
 }
 
 .product__item:hover::after {
+  /*hover*/
   position: absolute;
   z-index: -2;
-  top: 0;
-  left: -8px;
+  top: -6px;
+  left: -12px;
 
   display: block;
 
-  width: 280px;
+  width: 293px;
   height: calc(100% + 44px);
 
   content: '';
@@ -1207,6 +1208,7 @@ a:hover {
 }
 
 .product__item:hover {
+  /*hover*/
   z-index: 1;
 }
 
