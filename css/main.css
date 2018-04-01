@@ -1,9 +1,5 @@
 @charset 'UTF-8';
 
-. {
-  outline: 1px solid lightgray;
-}
-
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
@@ -98,6 +94,11 @@ a:hover {
   margin-top: 9px;
   padding-bottom: 2px;
 }
+.main-header__link {
+  margin: 0;
+  padding: 0;
+  height: 64px;
+}
 
 /*NAVIGATION*/
 .navigation {
@@ -164,6 +165,7 @@ a:hover {
 /*SUB*/
 .sub-navigation__items {
   position: absolute;
+  z-index: 10;
   left: -6px;
 
   display: none;
@@ -1041,13 +1043,17 @@ a:hover {
   display: block;
 
   width: 280px;
-  height: 100%;
+  height: calc(100% + 44px);
 
   content: '';
 
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-radius: 5px;
   background-color: rgba(256, 256, 256, .2);
+  box-shadow: 0px 10px 10px 5px rgba(0,0,0,0.2);
+}
+
+.product__item:hover {
+  z-index: 1;
 }
 
 .page--catalog .product__item {
@@ -1139,6 +1145,7 @@ a:hover {
 
 .product__annexe {
   position: absolute;
+  z-index: 10;
   bottom: -44px;
   left: -8px;
 
@@ -1149,13 +1156,16 @@ a:hover {
 
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  background-color: rgba(256, 256, 256, .2);
+  /*background-color: rgba(256, 256, 256, .2);*/
 }
+
 .product__item:hover .product__annexe {
   display: block;
 }
 
 .product__button {
+  position: relative;
+  z-index: 10;
   display: block;
 
   margin: -22px auto 0;
