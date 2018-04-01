@@ -998,11 +998,10 @@ a:hover {
   position: absolute;
   z-index: -1;
   top: 0;
-  left: 50%;
 
   width: 1050px;
   height: auto;
-  margin-left: -525px;
+
 }
 
 .slider__description {
@@ -1420,9 +1419,8 @@ a:hover {
 
 /* FEATURE*/
 .feature {
-  margin-right: auto;
-  margin-left: auto;
-  padding: 25px 0 0 0;
+  padding-top: 25px;
+  box-sizing: content-box;
 
   border-radius: 15px;
   background-color: #ebd9b8;
@@ -1446,7 +1444,7 @@ a:hover {
   display: flex;
 
   margin: 0;
-  padding: 20px 20px 0;
+  padding: 20px 0px 0 20px;
 
   list-style: none;
 
@@ -1458,6 +1456,7 @@ a:hover {
 }
 
 .feature__item {
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 22px;
 
@@ -1465,11 +1464,12 @@ a:hover {
 
   padding-bottom: 23.5px;
   padding-left: 55px;
+  padding-right: 25px;
 
   color: #323232;
 
-  -ms-flex-preferred-size: 485px;
-  flex-basis: 485px;
+
+  flex-basis: 560px;
 }
 .feature__item::before {
   position: absolute;
