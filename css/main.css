@@ -728,6 +728,10 @@ a:hover {
   border: none;
 }
 
+.filter__item label {
+  cursor: pointer;
+}
+
 .filter__caption {
   font-size: 14px;
   font-weight: normal;
@@ -760,6 +764,7 @@ a:hover {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
+  cursor: pointer;
 }
 
 .sort__input {
@@ -781,6 +786,7 @@ a:hover {
 
 .sort__input option {
   color: #323223;
+  cursor: pointer;
 }
 
 /*RANGE*/
@@ -944,6 +950,7 @@ a:hover {
 .filter__button:hover {
   background-color: #fff;
   color: #323232;
+  cursor: pointer;
 }
 
 
@@ -1077,7 +1084,6 @@ a:hover {
   background-position: 0;
 
   -ms-flex-preferred-size: 560px;
-  box-sizing: border-box;
 
       flex-basis: 560px;
 }
