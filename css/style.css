@@ -1841,6 +1841,7 @@ a:hover {
   margin-bottom: 2px;
   margin-left: 2px;
   padding: 0;
+  font-size: 0;
 
   background-image: url('../img/svg/logo-htmlacademy.svg');
   background-repeat: no-repeat;
