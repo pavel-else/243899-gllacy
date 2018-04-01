@@ -501,6 +501,9 @@ a:hover {
 
 .not-empty .user-nav__link--basket {
   padding-right: 12px;
+  background-color: #fff;
+  color: #323232;
+  font-weight: bold;
 }
 .not-empty .user-nav__link--basket::after {
   background-image: url('../img/svg/basket-red.svg');
