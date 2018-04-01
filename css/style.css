@@ -251,8 +251,8 @@ a:hover {
 
   list-style: none;
 
-  -ms-flex-preferred-size: 267px;
-  flex-basis: 267px;
+/*  -ms-flex-preferred-size: 267px;
+  flex-basis: 267px;*/
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
@@ -486,7 +486,7 @@ a:hover {
 .not-empty .user-nav__link--basket {
   font-weight: bold;
 
-  padding-right: 12px;
+  padding-right: 15px;
 
   color: #323232;
   background-color: #fff;
