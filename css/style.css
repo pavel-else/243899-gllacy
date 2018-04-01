@@ -72,10 +72,10 @@ a:hover {
   background-color: #e9563a;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#e74a35), to(#f26843));
   background-image: -webkit-linear-gradient(#e74a35, #f26843);
-  background-image:      -o-linear-gradient(#e74a35, #f26843);
-  background-image:         linear-gradient(#e74a35, #f26843);
+  background-image: -o-linear-gradient(#e74a35, #f26843);
+  background-image: linear-gradient(#e74a35, #f26843);
   -webkit-box-shadow: 0 2px 2px 0 rgba(7, 6, 0, .36);
-          box-shadow: 0 2px 2px 0 rgba(7, 6, 0, .36);
+  box-shadow: 0 2px 2px 0 rgba(7, 6, 0, .36);
   text-shadow: 0 2px 5px #a0200b;
 }
 
@@ -84,20 +84,20 @@ a:hover {
   background-color: inherit;
   background-image: -webkit-linear-gradient(#f58669, #ec6f5e);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
-  background-image:      -o-linear-gradient(#f58669, #ec6f5e);
-  background-image:         linear-gradient(#f58669, #ec6f5e);
+  background-image: -o-linear-gradient(#f58669, #ec6f5e);
+  background-image: linear-gradient(#f58669, #ec6f5e);
   -webkit-box-shadow: 0 1px 2px 0 #ac1000;
-          box-shadow: 0 1px 2px 0 #ac1000;
+  box-shadow: 0 1px 2px 0 #ac1000;
 }
 .button:focus {
   color: white;
   background-color: inherit;
   background-image: -webkit-linear-gradient(#f58669, #ec6f5e);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
-  background-image:      -o-linear-gradient(#f58669, #ec6f5e);
-  background-image:         linear-gradient(#f58669, #ec6f5e);
+  background-image: -o-linear-gradient(#f58669, #ec6f5e);
+  background-image: linear-gradient(#f58669, #ec6f5e);
   -webkit-box-shadow: 0 1px 2px 0 #ac1000;
-          box-shadow: 0 1px 2px 0 #ac1000;
+  box-shadow: 0 1px 2px 0 #ac1000;
 }
 
 .main-header {
@@ -190,7 +190,7 @@ a:hover {
   display: none;
 
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   min-width: 143px;
   margin: 0;
   margin-top: 5px;
@@ -202,7 +202,7 @@ a:hover {
   border-radius: 5px;
   background-color: #f8f7f4;
   -webkit-box-shadow: 0 20px 30px rgba(0,0,0,.5);
-          box-shadow: 0 20px 30px rgba(0,0,0,.5);
+  box-shadow: 0 20px 30px rgba(0,0,0,.5);
 }
 
 .sub-navigation__item--caption {
@@ -250,9 +250,9 @@ a:hover {
   padding: 0;
 
   list-style: none;
+  /*  -ms-flex-preferred-size: 267px;
+flex-basis: 267px;*/
 
-/*  -ms-flex-preferred-size: 267px;
-  flex-basis: 267px;*/
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
@@ -323,14 +323,14 @@ a:hover {
   display: none;
 
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 340px;
   padding: 18px 13px;
 
   border-radius: 5px;
   background-color: #f8f7f4;
   -webkit-box-shadow: 0 20px 30px rgba(0,0,0,.5);
-          box-shadow: 0 20px 30px rgba(0,0,0,.5);
+  box-shadow: 0 20px 30px rgba(0,0,0,.5);
 }
 
 .search__input {
@@ -338,7 +338,7 @@ a:hover {
   line-height: 24px;
 
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   height: 45px;
   padding-left: 10px;
@@ -384,7 +384,7 @@ a:hover {
   display: none;
 
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 277px;
   padding: 20px;
   padding-right: 17px;
@@ -393,7 +393,7 @@ a:hover {
   border-radius: 5px;
   background-color: #f8f7f5;
   -webkit-box-shadow: 0 20px 30px rgba(0,0,0,.5);
-          box-shadow: 0 20px 30px rgba(0,0,0,.5);
+  box-shadow: 0 20px 30px rgba(0,0,0,.5);
 }
 
 .login__input {
@@ -401,7 +401,7 @@ a:hover {
   line-height: 24px;
 
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   height: 44px;
   margin-bottom: 20px;
@@ -432,7 +432,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-direction: column;
+  flex-direction: column;
 
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -503,7 +503,7 @@ a:hover {
   right: 0;
 
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 539px;
   padding: 6px 13px;
 
@@ -576,7 +576,7 @@ a:hover {
   display: block;
 
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 170px;
   margin-bottom: 13px;
   margin-left: auto;
@@ -587,7 +587,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-direction: row-reverse;
+  flex-direction: row-reverse;
 
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -615,7 +615,6 @@ a:hover {
 }
 
 .contact-info__tel {
-  vertical-align: baseline;
   font-size: 22px;
   line-height: 24px;
 
@@ -623,6 +622,8 @@ a:hover {
 
   margin-right: -1px;
   padding-top: 4px;
+
+  vertical-align: baseline;
 
   border: none;
 }
@@ -692,13 +693,13 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-direction: row;
+  flex-direction: row;
 
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
@@ -729,7 +730,7 @@ a:hover {
   position: relative;
 
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 38px;
   padding: 18px 25px 0;
 
@@ -747,12 +748,12 @@ a:hover {
   border: none;
   background-color: rgba(256, 256, 256, .2);
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .sort__input {
   text-indent: .01px;
-     text-overflow: '';
+  text-overflow: '';
 
   background-image: url('../img/svg/icon-down-dir.svg');
   background-repeat: no-repeat;
@@ -762,11 +763,11 @@ a:hover {
 
   -webkit-appearance: none;
   /* for FF */
-     -moz-appearance: none;
+  -moz-appearance: none;
   -o-text-overflow: '';
   /* for IE */
-      -ms-appearance: none;
-          appearance: none;
+  -ms-appearance: none;
+  appearance: none;
 }
 
 .sort__input option {
@@ -926,8 +927,8 @@ a:hover {
 
   content: '';
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 
   border-bottom: 3px solid #fff;
   border-left: 3px solid #fff;
@@ -947,7 +948,7 @@ a:hover {
   display: block;
 
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 38px;
   margin-bottom: 5px;
   margin-left: -2px;
@@ -976,7 +977,7 @@ a:hover {
 
 .slider__page {
   display: none;
-      flex-direction: column;
+  flex-direction: column;
 
   padding-top: 273px;
 
@@ -1001,7 +1002,6 @@ a:hover {
 
   width: 1050px;
   height: auto;
-
 }
 
 .slider__description {
@@ -1083,10 +1083,10 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-direction: column;
+  flex-direction: column;
 
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 16px 20px 16px 18px;
 
   border-radius: 16px;
@@ -1145,7 +1145,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-direction: column;
+  flex-direction: column;
 
   margin-bottom: 32px;
   padding: 34px 0 0;
@@ -1174,7 +1174,7 @@ a:hover {
   -ms-flex-pack: justify;
   justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .page--main .product__items {
@@ -1186,7 +1186,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-direction: column;
+  flex-direction: column;
 
   margin: 0;
   padding: 0;
@@ -1215,7 +1215,7 @@ a:hover {
   border-radius: 5px;
   background-color: rgba(256, 256, 256, .2);
   -webkit-box-shadow: 0 10px 10px 5px rgba(0,0,0,.2);
-          box-shadow: 0 10px 10px 5px rgba(0,0,0,.2);
+  box-shadow: 0 10px 10px 5px rgba(0,0,0,.2);
 }
 
 .product__item:hover {
@@ -1385,8 +1385,8 @@ a:hover {
   left: 4px;
 
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 
   border-color: rgba(256, 256, 256, .5);
 }
@@ -1394,15 +1394,15 @@ a:hover {
   right: 3px;
 
   -webkit-transform: rotate(225deg);
-      -ms-transform: rotate(225deg);
-          transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
 }
 
 .pager__link {
   display: block;
 
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 25px;
   height: 25px;
   margin-left: 4px;
@@ -1419,8 +1419,8 @@ a:hover {
 
 /* FEATURE*/
 .feature {
-  padding-top: 25px;
   box-sizing: content-box;
+  padding-top: 25px;
 
   border-radius: 15px;
   background-color: #ebd9b8;
@@ -1444,30 +1444,29 @@ a:hover {
   display: flex;
 
   margin: 0;
-  padding: 20px 0px 0 20px;
+  padding: 20px 0 0 20px;
 
   list-style: none;
 
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .feature__item {
-  box-sizing: border-box;
   font-size: 16px;
   line-height: 22px;
 
   position: relative;
 
+  box-sizing: border-box;
+  padding-right: 25px;
   padding-bottom: 23.5px;
   padding-left: 55px;
-  padding-right: 25px;
 
   color: #323232;
-
 
   flex-basis: 560px;
 }
@@ -1535,7 +1534,6 @@ a:hover {
 }
 
 .new-in-blog__link {
-  vertical-align: baseline;
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
@@ -1544,6 +1542,7 @@ a:hover {
 
   width: 290px;
 
+  vertical-align: baseline;
   text-decoration: underline;
 
   color: #323232;
@@ -1589,7 +1588,7 @@ a:hover {
   line-height: 40px;
 
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-right: 10px;
   padding-left: 10px;
 
@@ -1625,7 +1624,7 @@ a:hover {
   right: 27px;
 
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 302px;
   padding: 29px 25px 30px;
 
@@ -1645,7 +1644,6 @@ a:hover {
 }
 
 .map__adress-text {
-  vertical-align: baseline;
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
@@ -1655,6 +1653,8 @@ a:hover {
   margin: 0;
   margin-bottom: 18px;
   padding: 0;
+
+  vertical-align: baseline;
 
   color: #323232;
 }
@@ -1681,17 +1681,21 @@ a:hover {
 }
 
 .map__button {
-  display: block;
   font-size: 18px;
   font-weight: bold;
   line-height: 24px;
-  background-color: #e9563a;
-  border: none;
-  text-align: center;
-  border-radius: 26px;
+
+  display: block;
 
   margin-top: 24px;
   padding: 10px 26px 11px 28px;
+
+  text-align: center;
+
+  border: none;
+  border-radius: 26px;
+  background-color: #e9563a;
+
   -webkit-appearance: none;
 }
 .map__button:hover {
@@ -1767,7 +1771,7 @@ a:hover {
   display: flex;
 
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 310px;
   margin: 0;
   padding: 0;
@@ -1777,7 +1781,7 @@ a:hover {
   list-style: none;
 
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1789,7 +1793,7 @@ a:hover {
 }
 .sitelink__items li:nth-child(2n) {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding-left: 5px;
 
   -ms-flex-preferred-size: 55%;
@@ -1884,7 +1888,7 @@ a:hover {
   display: none;
 
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 477px;
   margin-top: -108px;
   margin-right: -208px;
@@ -1897,7 +1901,7 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-direction: column;
+  flex-direction: column;
 
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1916,7 +1920,7 @@ a:hover {
 
 .feedback__input {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 267px;
   height: 44px;
   margin-bottom: 20px;
