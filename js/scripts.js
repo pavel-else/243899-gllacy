@@ -1,6 +1,7 @@
-"use strict";
+// "use strict";
 
 var link = document.querySelector(".map__button");
+var overlay = document.querySelector(".overlay");
 
 var feedback = document.querySelector(".feedback");
 var form = feedback.querySelector(".feedback__form");
@@ -23,6 +24,7 @@ try {
 link.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	feedback.classList.add("feedback--show");
+	enableOverlay();
 	login.focus();
 
 	if (isStorageSupport) {
@@ -37,13 +39,17 @@ link.addEventListener("click", function (evt) {
 close.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	feedback.classList.remove("feedback--show");
+   	feedback.classList.remove("feedback--error");
+   	disableOverlay();
 });
 
 form.addEventListener("submit", function (evt) {
-    evt.preventDefault();
-
     if (!login.value || !email.value) {
+    	evt.preventDefault();
     	console.log('Error!');
+	    feedback.classList.remove("feedback-error");
+      	feedback.offsetWidth = feedback.offsetWidth;
+    	feedback.classList.add("feedback--error");
     } else {
     	if (isStorageSupport) {
 	    	localStorage.setItem("login", login.value); 
@@ -51,6 +57,7 @@ form.addEventListener("submit", function (evt) {
     	}
 
     	feedback.classList.remove("feedback--show");
+    	disableOverlay();
     }
 
 });
@@ -61,8 +68,19 @@ window.addEventListener("keydown", function (evt) {
       evt.preventDefault();
       if (feedback.classList.contains("feedback--show")) {
         feedback.classList.remove("feedback--show");
+    	feedback.classList.remove("feedback--error");
       }
+
+      disableOverlay();
     }
 });
 
-  
+function enableOverlay() {
+	var overlay = document.querySelector(".overlay");
+	overlay.classList.add("overlay--show");
+}
+
+function disableOverlay() {
+	var overlay = document.querySelector(".overlay");
+	overlay.classList.remove("overlay--show");
+}
