@@ -1897,6 +1897,11 @@ flex-basis: 267px;*/
   border-radius: 10px;
   background-color: #f8f7f4;
 }
+
+.feedback--show {
+  display: block;
+}
+
 .feedback__form {
   display: -webkit-box;
   display: -ms-flexbox;
