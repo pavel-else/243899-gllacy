@@ -1620,6 +1620,12 @@ flex-basis: 267px;*/
 
   color: #323232;
 }
+
+.map__interactive {
+  position: absolute;
+  top: 0;
+}
+
 .map__info {
   font-size: 14px;
   line-height: 20px;
