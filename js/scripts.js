@@ -56,8 +56,7 @@ link.addEventListener("click", function (evt) {
 		email.value = localStorage.getItem("email");
 	}
 
-	(login.value !== '') ? email.focus()  : login.focus();
-	(email.value !== '') ? submit.focus() : email.focus();
+	(!login.value) ? login.focus() : email.focus();
 });
 
 close.addEventListener("click", function (evt) {
@@ -68,16 +67,10 @@ close.addEventListener("click", function (evt) {
 });
 
 form.addEventListener("submit", function (evt) {
+   	evt.preventDefault();
     if (!login.value || !email.value) {
-    	evt.preventDefault();
     	console.log('Ошибка отправки формы feedback: не заполнены логин или пароль');
-	    feedback.classList.remove("feedback-error");
-
-	    // Переопределение размеров окна необходимо для
-	    //многократного использования анмации без перезагрузки
-      	feedback.offsetWidth = feedback.offsetWidth;
-      	
-    	feedback.classList.add("feedback--error");
+	    alert ('Не заполнены логин или пароль!');
     } else {
     	if (isStorageSupport) {
 	    	localStorage.setItem("login", login.value); 
@@ -86,6 +79,7 @@ form.addEventListener("submit", function (evt) {
 
     	feedback.classList.remove("feedback--show");
     	disableOverlay();
+    	alert('Ваше обращение будет рассмотрено в ближайшее время.')
     }
 });
 
