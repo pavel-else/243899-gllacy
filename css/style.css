@@ -13,6 +13,16 @@ body {
   background-color: #849d8f;
 }
 
+.body--bg-0 {
+  background-color: #849d8f;
+}
+.body--bg-1 {
+  background-color: #8996a6;
+}
+.body--bg-2 {
+  background-color: #9d8b84;
+}
+
 a {
   text-decoration: none;
 
@@ -1030,11 +1040,6 @@ flex-basis: 267px;*/
   border-radius: 32px;
 }
 
-.slider__page:nth-child(2),
-.slider__page:nth-child(3) {
-  display: none;
-}
-
 .slider__r-buttons {
   position: absolute;
   top: 563px;
@@ -1062,7 +1067,7 @@ flex-basis: 267px;*/
   border-radius: 50%;
   background-color: transparent;
 }
-.slider__r-button--active {
+.slider__r-button.active {
   background-color: #fff;
 }
 

@@ -132,6 +132,6 @@ function removeBackground() {
 	var body = document.querySelector(".page");
 
 	for (var i = 0; i < slider__pages.length; i++ ) {
-		body.classList.remove(".body--bg-" + i);
+		body.classList.remove("body--bg-" + i);
 	}	
 }
