@@ -69,8 +69,6 @@ close.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
    	evt.preventDefault();
     if (!login.value || !email.value) {
-    	console.log('Ошибка отправки формы feedback: не заполнены логин или пароль');
-	    alert ('Не заполнены логин или пароль!');
     } else {
     	if (isStorageSupport) {
 	    	localStorage.setItem("login", login.value); 
