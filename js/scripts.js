@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 
 var link = document.querySelector(".map__button");
 var overlay = document.querySelector(".overlay");
@@ -14,53 +14,22 @@ var submit = feedback.querySelector(".feedback__button--submit");
 var isStorageSupport = true;
 var storage = "";
 
+function enableOverlay() {
+	var overlay = document.querySelector(".overlay");
+	overlay.classList.add("overlay--show");
+}
+
+function disableOverlay() {
+	var overlay = document.querySelector(".overlay");
+	overlay.classList.remove("overlay--show");
+}
+
 // Проверка работоспособности localStorage
 try {
 	storage = localStorage.getItem("login");
 } catch (err) {
 	isStorageSupport = false;
 }
-
-link.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	feedback.classList.add("feedback--show");
-	enableOverlay();
-	login.focus();
-
-	if (isStorageSupport) {
-		login.value = localStorage.getItem("login");
-		email.value = localStorage.getItem("email");
-	}
-
-	login.value ? email.focus()  : login.focus();
-	email.value ? submit.focus() : email.focus();
-});
-
-close.addEventListener("click", function (evt) {
-	evt.preventDefault();
-	feedback.classList.remove("feedback--show");
-   	feedback.classList.remove("feedback--error");
-   	disableOverlay();
-});
-
-form.addEventListener("submit", function (evt) {
-    if (!login.value || !email.value) {
-    	evt.preventDefault();
-    	console.log('Error!');
-	    feedback.classList.remove("feedback-error");
-      	feedback.offsetWidth = feedback.offsetWidth;
-    	feedback.classList.add("feedback--error");
-    } else {
-    	if (isStorageSupport) {
-	    	localStorage.setItem("login", login.value); 
-	    	localStorage.setItem("email", email.value); 
-    	}
-
-    	feedback.classList.remove("feedback--show");
-    	disableOverlay();
-    }
-
-});
 
 //Закрытие модального окна по клавише ESC
 window.addEventListener("keydown", function (evt) {
@@ -75,12 +44,94 @@ window.addEventListener("keydown", function (evt) {
     }
 });
 
-function enableOverlay() {
-	var overlay = document.querySelector(".overlay");
-	overlay.classList.add("overlay--show");
+// ФОРМА ОБРАТНОЙ СВЯЗИ - ОБРАБОТКА СОБЫТИЙ
+link.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	feedback.classList.add("feedback--show");
+	enableOverlay();
+	login.focus();
+
+	if (isStorageSupport) {
+		login.value = localStorage.getItem("login");
+		email.value = localStorage.getItem("email");
+	}
+
+	(login.value !== '') ? email.focus()  : login.focus();
+	(email.value !== '') ? submit.focus() : email.focus();
+});
+
+close.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	feedback.classList.remove("feedback--show");
+   	feedback.classList.remove("feedback--error");
+   	disableOverlay();
+});
+
+form.addEventListener("submit", function (evt) {
+    if (!login.value || !email.value) {
+    	evt.preventDefault();
+    	console.log('Ошибка отправки формы feedback: не заполнены логин или пароль');
+	    feedback.classList.remove("feedback-error");
+
+	    // Переопределение размеров окна необходимо для
+	    //многократного использования анмации без перезагрузки
+      	feedback.offsetWidth = feedback.offsetWidth;
+      	
+    	feedback.classList.add("feedback--error");
+    } else {
+    	if (isStorageSupport) {
+	    	localStorage.setItem("login", login.value); 
+	    	localStorage.setItem("email", email.value); 
+    	}
+
+    	feedback.classList.remove("feedback--show");
+    	disableOverlay();
+    }
+});
+
+
+// СЛАЙДЕР
+var body = document.querySelector(".page");
+var slider = document.querySelector(".slider");
+var slider__buttons = slider.querySelectorAll(".slider__r-button");
+var slider__pages = slider.querySelectorAll(".slider__page");
+ 
+for (var i = 0; i < slider__buttons.length; i++) {
+	(function (i) {
+		slider__buttons[i].addEventListener("click", function (evt) {
+			evt.preventDefault();
+			removeActiveButton();
+			removeActivePage();
+			removeBackground();
+			slider__buttons[i].classList.add("active");
+			slider__pages[i].classList.add("active");
+			body.classList.add("body--bg-" + i);			
+		});
+	})(i);
 }
 
-function disableOverlay() {
-	var overlay = document.querySelector(".overlay");
-	overlay.classList.remove("overlay--show");
+
+function removeActivePage() {
+	var slider__pages = slider.getElementsByClassName("slider__page");
+
+	for (var i = 0; i < slider__pages.length; i++ ) {
+		slider__pages[i].classList.remove("active");
+	}
+}
+
+function removeActiveButton() {
+	var slider__buttons = slider.getElementsByClassName("slider__r-button");
+
+	for (var i = 0; i < slider__buttons.length; i++ ) {
+		slider__buttons[i].classList.remove("active");
+	}
+}
+
+function removeBackground() {
+	var slider__pages = slider.getElementsByClassName("slider__page");
+	var body = document.querySelector(".page");
+
+	for (var i = 0; i < slider__pages.length; i++ ) {
+		body.classList.remove(".body--bg-" + i);
+	}	
 }
