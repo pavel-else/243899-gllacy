@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси - Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page page--catalog">
     <header class="main-header container ">
@@ -23,8 +23,8 @@
                 <li class="sub-navigation__item"><a class="sub-navigation__link" href="#">Мелорин</a></li>
               </ul>
             </li>
-            <li class="navigation__item"><a class="navigation__item--link" href="delivery.html"><span class="underline">Доставка и оплата</span></a></li>
-            <li class="navigation__item"><a class="navigation__item--link" href="about.html"><span class="underline">О Компании</span></a></li>
+            <li class="navigation__item"><a class="navigation__item--link" href="#"><span class="underline">Доставка и оплата</span></a></li>
+            <li class="navigation__item"><a class="navigation__item--link" href="#"><span class="underline">О Компании</span></a></li>
           </ul>
         </div>
 
@@ -111,7 +111,11 @@
             <legend class="filter__caption">Цена: 100 руб. – 500 руб.</legend>
             <div class="filter__canvas filter__canvas--range">
               <div class="range__scale">
-                <div class="range__bar"></div>
+                <div class="range__self">
+                  <div class="range__button range__button--start"></div>
+                  <div class="range__bar"></div>
+                  <div class="range__button range__button--end"></div>
+                </div>
               </div>
             </div>
           </fieldset>
