@@ -1256,8 +1256,11 @@ flex-basis: 267px;*/
 
   background-color: #fff;
 }
-.slider__r-button:not(.active):hover {
+.slider__r-button:not(.active):not(:active):hover {
   background-color: rgba(256, 256, 256, .5);
+}
+.slider__r-button:active {
+  background-color: #fff;
 }
 
 /*DISCOUNT*/
@@ -1627,7 +1630,7 @@ flex-basis: 267px;*/
   color: #323232;
 }
 
-.pager__link:not(.pager__link--active):hover {
+.pager__link:not(.pager__link--active):not(:active):hover {
   color: #fff;
   border-radius: 50%;
   background-color: rgba(256, 256, 256, .3);
@@ -1938,7 +1941,7 @@ flex-basis: 267px;*/
 
   -webkit-appearance: none;
 }
-.map__button:hover {
+.map__button:not(:active):hover {
   color: white;
   background-color: #e9563a;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
@@ -1947,6 +1950,10 @@ flex-basis: 267px;*/
   background-image: linear-gradient(#f58669, #ec6f5e);
   -webkit-box-shadow: 0 1px 2px 0 #ac1000;
   box-shadow: 0 1px 2px 0 #ac1000;
+}
+
+.map__button:active {
+
 }
 
 
