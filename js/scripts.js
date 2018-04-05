@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 
 var link = document.querySelector(".map__button");
 var overlay = document.querySelector(".overlay");
@@ -68,7 +68,11 @@ close.addEventListener("click", function (evt) {
 
 form.addEventListener("submit", function (evt) {
    	evt.preventDefault();
+
     if (!login.value || !email.value) {
+    	feedback.classList.remove("feedback--error");
+    	feedback.offsetWidth = feedback.offsetWidth;
+    	feedback.classList.add("feedback--error");
     } else {
     	if (isStorageSupport) {
 	    	localStorage.setItem("login", login.value); 
